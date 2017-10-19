@@ -1,0 +1,17 @@
+<style>
+@media (max-height: 767px) {
+  header div.container .header-logo.left {
+    display:none;
+  }
+  header div.container div.nav-container.right {
+    display:none;
+  }
+  body.full iframe {
+    padding-top: 47px;
+  }
+}
+</style>
+
+<iframe style="height: {% if object.height %}{{ object.height }}px{% else %}100%{% endif %}; width: {% if object.width %}{{ object.width }}px{% else %}100%{% endif %}" scrolling="{% if object.scrollable %}yes{% else %}no{% endif %}" src="{{ object.url }}" width="{% if object.width %}{{ object.width }}{% else %}100%{% endif %}" height="{% if object.height %}{{ object.height }}{% else %}100%{% endif %}">
+</iframe>
+

@@ -1,0 +1,39 @@
+{% extends "feincms_base.html" %}
+{% load  i18n feincms_tags feincms_page_tags thumbnail  %}
+{% block content %}
+<!-- CONTENT -->
+<div class="container">
+    {% include "breadcrumbs.html" %}
+
+    <section class="content-full-width block left">
+        <h1>{{ feincms_page.title }}</h1>
+            {% if feincms_page.intro_text %}
+            <p class="introduction page-introduction">{{ feincms_page.intro_text }}</p>
+            {% endif %}
+	</section>
+
+    {% if feincms_page.content.content_top %}
+	<section class="content-full-width block left">
+    {% feincms_render_region feincms_page 'content_top' request %}
+	</section>
+    {% endif %}
+
+    {% if feincms_page.content.content_main %}
+	<section class="content-left left">
+        <div class="block">
+        {% feincms_render_region feincms_page 'content_main' request %}
+        {% include "share_bar_content.html" %}
+        </div>
+
+	</section>
+    {% endif %}
+
+    {% if feincms_page.content.content_sidebar %}
+    <aside class="content-right left">
+    {% feincms_render_region feincms_page 'content_sidebar' request %}
+	</aside>
+    {% endif %}
+
+
+</div>
+{% endblock %}

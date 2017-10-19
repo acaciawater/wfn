@@ -1,0 +1,21 @@
+{% load i18n %}
+<div class="block report">
+
+    {% if object.header %}<h4>{{ object.header }}</h4>{% endif %}
+
+    <div class="report-inner">
+        <h5>{{ object.title }}</h5>
+
+        <div class="media">
+            <a href="{{ object.link }}" class="img">
+                <span class="icon icon-document"></span>
+            </a>
+
+            <div class="bd">
+                <p>{{ object.text }}</p>
+            </div>
+        </div>
+
+        <a href="{{ object.link }}" class="action-btn">{% trans "Read the report" %} <span class="icon icon-arrow-right"></span></a>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block body-class %} iframe-content{% endblock %}
+{% block content %}
+	<div class="login-form">
+        {% block login_header %}
+		<h1>{% trans "Login" %}<a href="{% url 'registration_register' %}">{% trans "(or register, it's free!)" %}</a></h1>
+        {% endblock %}
+
+		<form method="post" action="." class="wfn-form">
+          {% csrf_token %}
+            {% if form.errors %}
+			<div class="error-msg">
+				<span class="icon icon-close"></span><b>{% trans "Attention!" %}</b>
+                {% for k, v in form.errors.items %}
+                    {% ifequal k "__all__" %}
+                    {% for value in v  %}{{ value }}{% endfor %}
+                    {% endifequal %}
+                {% endfor %}
+			</div>
+            {% endif %}
+            {{ form.next }}
+			<div class="input-row">
+				<label for="username">{% trans "Username" %} <span class="required">*</span></label>
+				{{ form.username }}
+                {% if form.username.errors %}
+                    <span class="error-info">{% for e in form.username.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="password">{% trans "Password" %} <span class="required">*</span></label>
+				{{ form.password }}
+                {% if form.password.errors %}
+                    <span class="error-info">{% for e in form.password.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+			    <br/><br/>
+			    <button type="submit" name="send" class="submit right">{% trans "Login" %} <span class="icon icon-arrow-right"></span></button>
+            </div>
+
+		</form>
+
+	</div>
+
+{% endblock %}

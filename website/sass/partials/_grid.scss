@@ -1,0 +1,47 @@
+/* GRID */
+.container{
+	width: 960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.content-left-home{
+	width: 480px;
+	margin-right: 160px;
+	display: block;
+}
+
+.content-right-home{
+	width: 320px;
+	display: block;
+}
+
+.content-left{
+	width: 640px;
+	margin-right: 30px;
+	display: block;
+}
+
+.content-right{
+	width: 290px;
+	display: block;
+}
+
+.content-full-width{
+	width: 960px;
+	display: block;
+}
+
+.content-third{
+
+	.one-third{
+		width: 300px;
+		float: left;
+		margin-right: 30px;
+	}
+
+	.one-third-last{
+		margin-right: 0;
+	}
+
+}

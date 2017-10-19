@@ -1,0 +1,14 @@
+{% load website_tags applicationcontent_tags %}
+<ul class="nav breadcrumb">
+{% feincms_breadcrumbs_raw feincms_page as breadcrumbs %}
+{% for url, title in breadcrumbs %}
+    {% if url != feincms_page.get_absolute_url or in_appcontent_subpage %}
+    <li><a href="{{ url }}">{{ title }}</a></li>
+    {% else %}
+    <li class="current"><span>{{ title }}</span></li>
+    {% endif %}
+{% endfor %}
+{% if request|has_fragment:"breadcrumb_fragment" %}
+    <li class="current"><span>{% get_fragment request "breadcrumb_fragment" %}</span></li>
+{% endif %}
+</ul>

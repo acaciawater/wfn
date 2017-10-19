@@ -1,0 +1,25 @@
+{% load i18n thumbnail %}
+<div class="drop media">
+    {% if object.link %}
+    <a href="{{ object.link }}" class="{{ object.image_position }}">
+    {% else %}
+    <span class="{{ object.image_position }}">
+    {% endif %}
+        <span class="mask"><img src="{{ STATIC_URL }}images/{{ object.image_mask }}.png" width="284" height="278" alt=""></span>
+      {% thumbnail object.image.file '284x278'  crop="center" format="JPEG" upscale=True as im %}
+           <img src="{{ im.url }}" width="284" height="278" alt=""/>
+      {% endthumbnail %}
+    {% if object.link %}
+    </a>
+    {% else %}
+    </span>
+    {% endif %}
+
+    <div class="bd">
+        <h2>{{ object.header }}</h2>
+        {% if object.sub_header %}<span class="sub-header">{{ object.sub_header }}</span>{% endif %}
+        {% if object.text %}<p>{{ object.text }}</p>{% endif %}
+        {% if object.link %}<a href="{{ object.link }}" class="action-btn">{% if object.link_text %}{{ object.link_text }}{% else %}{{ object.link_text }}{% trans "Link text" %}{% endif %}<span class="icon icon-arrow-right"></span></a>{% endif %}
+    </div>
+</div>
+<div class="clear"></div>

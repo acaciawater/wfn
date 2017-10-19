@@ -1,0 +1,37 @@
+<div class="item">
+
+    <div class="banner-copy">
+        <div class="banner-content">
+
+            <div class="banner-vertical">
+                <h1>{{ object.header }}</h1>
+                {% if object.sub_header %}<p>{{ object.sub_header }}</p>{% endif %}
+                {% if not object.last %}
+                <a href="javascript:void(0);" class="next-btn">
+                    {% if object.link_text %}{{ object.link_text }}{% else %}{{ object.tab_text }}{% endif %}
+                    <span class="arrow-right">
+                        <img src="{{ STATIC_URL }}images/arrow-right.png" width="36" height="100" alt="&gt;">
+                    </span>
+                </a>
+                {% endif %}
+            </div>
+            {% if not object.last %}
+            {% if object.background %}
+            <div class="banner-right">
+                <span class="helper">
+                    <img src="{{ object.background.file.url }}" alt="" >
+                </span>
+            </div>
+            {% endif %}
+            {% else %}
+            <div class="banner-right">
+                {% for link in links %}
+                <a href="{{ link.link }}" class="action-btn">{{ link.link_text }}<span class="icon icon-arrow-right right"></span></a><br/>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+    <img src="{{ object.image.file.url }}" class="bg-img" alt="" >
+</div>

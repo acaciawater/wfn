@@ -1,0 +1,22 @@
+{% load applicationcontent_tags %}
+{% load website_tags  %}
+{% if newsitem_collection %}
+<div class="full-news">
+    {% if object.header %}<h2>{{ object.header }}</h2>{% endif %}
+    {% for newsitem in newsitem_collection %}
+
+    {% comment %}
+    <a href="{% app_reverse "newsitem_detail" "website.news_urls" newsitem.slug %}">
+        {% if newsitem.main_image %}<img src="{{ newsitem.main_image.file.url }}" alt="" >{% endif %}
+    </a>
+    {% endcomment %}
+    {% app_reverse "newsitem_detail" "website.news_urls" newsitem.slug  as fein_news_slug %}
+
+    <span class="news-date">{{ newsitem.date|date:"d-n-Y" }}</span>
+
+    <p><a href="{% fix_lang_url fein_news_slug %}">{{ newsitem.title }}</a></p>
+    {% endfor %}
+    {% app_reverse "newsitem_list" "website.news_urls" as fein_all_news %}
+    <a href="{% fix_lang_url fein_all_news %}" class="action-btn">Read all news <span class="icon icon-arrow-right"></span></a>
+</div>
+{% endif %}

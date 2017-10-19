@@ -1,0 +1,10 @@
+{% load i18n %}
+<ul>
+    {% for publication in publications %}
+    <li>
+        <span>{{ publication.date }}</span>
+        <span>{{ publication.description }}</span>
+        <a href="{{ publication.download.upload_file.url }}">{% trans "download" %}</a>
+    </li>
+    {% endfor %}
+</ul>

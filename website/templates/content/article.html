@@ -1,0 +1,22 @@
+{% load i18n thumbnail %}
+<div class="article media">
+    {% if object.link %}
+    <a href="{{ object.link }}" class="img">
+    {% else %}
+    <span class="img">
+    {% endif %}
+    {% thumbnail object.image.file '180x120'  crop="center" format="JPEG" upscale=True as im %}
+    <img src="{{ im.url }}" alt="">
+    {% endthumbnail %}
+    {% if object.link %}
+    </a>
+    {% else %}
+    </span>
+    {% endif %}
+    <div class="bd">
+        <h3>{% if object.link %}<a href="{{ object.link }}">{% endif %}{{ object.header }}{% if object.link %}</a>{% endif %}</h3>
+        {% if object.text %}<p>{{ object.text }}</p>{% endif %}
+        {% if object.text %}{% if object.link %}<a href="{{ object.link }}">{% if object.link_text %}{{ object.link_text }}{% else %}{% trans "Read more" %}{% endif %}</a>{% endif %}{% endif %}
+    </div>
+</div>
+<div class="clear"></div>

@@ -1,0 +1,14 @@
+{% extends "feincms_base.html" %}
+{% load  i18n feincms_tags feincms_page_tags   %}
+
+{% block body-class %} full{% endblock %}
+
+{% block header2 %}
+{% endblock %}
+
+{% block content %}
+    {% feincms_render_region feincms_page 'empty_main' request %}
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

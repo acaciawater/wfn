@@ -1,0 +1,80 @@
+{% extends "feincms_base.html" %}
+{% load  i18n feincms_tags feincms_page_tags   %}
+
+{% block logo %}
+<h1 class="header-logo left">
+    <a href="/{{ feincms_page.language }}/" title="Water Footprint Network">
+        <img src="{{ STATIC_URL }}images/WaterFootprintNetwork-header.png" width="230" height="98" alt="Water Footprint Network">
+    </a>
+</h1>
+{% endblock %}
+
+
+{% block carousel %}
+<!-- BANNER CONTAINER -->
+<section class="banner">
+	<div class="full-width-slider">
+		<div class="slider">
+            {% for content in feincms_page.content.carousel %}
+                {% feincms_render_content content request %}
+            {% endfor %}
+		</div>
+	</div>
+	<div class="container">
+		<div class='drag-scrollbar-scroll-container'></div>
+        {% for content in feincms_page.content.carousel %}
+            {{ content.render_tab }}
+        {% endfor %}
+	</div>
+</section>
+<div class="clear"></div>
+{% endblock %}
+
+
+
+{% block content %}
+<!-- CONTENT -->
+<div class="container">
+
+    {% if feincms_page.content.homepage_top_left and feincms_page.content.homepage_top_middle and feincms_page.content.homepage_top_right %}
+    <div class="content-third block">
+
+		<div class="one-third">
+        {% feincms_render_region feincms_page 'homepage_top_left' request %}
+		</div>
+
+		<div class="one-third">
+        {% feincms_render_region feincms_page 'homepage_top_middle' request %}
+		</div>
+
+		<div class="one-third one-third-last">
+        {% feincms_render_region feincms_page 'homepage_top_right' request %}
+		</div>
+
+	</div>
+    {% endif %}
+
+    {% if feincms_page.content.homepage_top %}
+	<section class="content-full-width block left">
+    {% feincms_render_region feincms_page 'homepage_top' request %}
+	</section>
+    {% endif %}
+
+    {% if feincms_page.content.homepage_main %}
+	<section class="content-left-home left">
+        <div class="block">
+        {% feincms_render_region feincms_page 'homepage_main' request %}
+        </div>
+	</section>
+    {% endif %}
+
+    {% if feincms_page.content.homepage_sidebar %}
+    <aside class="content-right-home left">
+    {% feincms_render_region feincms_page 'homepage_sidebar' request %}
+	</aside>
+    {% endif %}
+
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block body-class %} iframe-content{% endblock %}
+{% block content %}
+	<div class="login-form">
+
+		<h1>{% trans 'Please register, it’s free!' %}<a href="{% url "auth_login" %}">{% trans "(or log in)" %}</a></h1>
+		<p>{% trans "Thanks for your interest in our downloads. Please tell us something about yourself first, and help us improve our website." %}</p>
+
+		<form method="post" action="." class="wfn-form">
+          {% csrf_token %}
+            {% if form.errors %}
+			<div class="error-msg">
+				<span class="icon icon-close"></span><b>{% trans "Attention!" %}</b>
+            {% for k, v in form.errors.items %}
+                {% ifequal k "__all__" %}
+                {% for value in v  %}{{ value }}{% endfor %}
+                {% endifequal %}
+            {% endfor %}
+			</div>
+            {% endif %}
+            {{ form.next }}
+
+			<div class="input-row">
+				<label for="{{ form.first_name.id_for_label }}">{% trans "First name" %}<span class="required">*</span></label>
+				{{ form.first_name }}
+                {% if form.first_name.errors %}
+                    <span class="error-info">{% for e in form.first_name.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="{{ form.last_name.id_for_label }}">{% trans "Last name" %}<span class="required">*</span></label>
+				{{ form.last_name }}
+                {% if form.last_name.errors %}
+                    <span class="error-info">{% for e in form.last_name.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="email">{% trans "E-mail" %} <span class="required">*</span></label>
+				{{ form.email }}
+                {% if form.email.errors %}
+                    <span class="error-info">{% for e in form.email.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="username">{% trans "Username" %}<span class="required">*</span></label>
+				{{ form.username }}
+                {% if form.username.errors %}
+                    <span class="error-info">{% for e in form.username.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+        {% comment %}
+            <div class="input-row">
+                <label for="job_description">{% trans "Job description" %} </label>
+				{{ form.job_description }}
+			</div>
+        {% endcomment %}
+            {% comment %}
+            <div class="input-row">
+				<label for="area">{% trans "Area" %}</label>
+                {{ form.area }}
+			</div>
+            <div class="input-row">
+                <label for="whence_your_interest">{% trans "Whence your interest?" %} </label>
+				{{ form.whence_your_interest }}
+			</div>
+			{% endcomment %}
+
+			<div class="input-row">
+				<label for="organisation">{% trans "Organisation" %}</label>
+				{{ form.organisation }}
+                {% if form.organisation.errors %}
+                    <span class="error-info">{% for e in form.organisation.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="{{ form.job_description.id_for_label }}">{% trans "Function" %}</label>
+				{{ form.job_description }}
+                {% if form.job_description.errors %}
+                    <span class="error-info">{% for e in form.job_description.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="country">{% trans "Country" %}</label>
+				{{ form.country }}
+                {% if form.country.errors %}
+                    <span class="error-info">{% for e in form.country.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="password1">{% trans "Password" %} <span class="required">*</span></label>
+				{{ form.password1 }}
+                {% if form.password1.errors %}
+                    <span class="error-info">{% for e in form.password1.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+			<div class="input-row">
+				<label for="password2">{% trans "Password (again)" %} <span class="required">*</span></label>
+				{{ form.password2 }}
+                {% if form.password2.errors %}
+                    <span class="error-info">{% for e in form.password2.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+			</div>
+
+            <div class="input-row checkbox-input-row">
+                <label for="{{ form.newsletter.id_for_label }}">{{ form.newsletter.label }}</label>
+                {{ form.newsletter }}
+                {% if form.newsletter.errors %}
+                    <span class="error-info">{% for e in form.newsletter.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+            </div>
+
+            <div class="input-row checkbox-input-row">
+                <label for="{{ form.updates_tool_developments.id_for_label }}">{{ form.updates_tool_developments.label }}</label>
+                {{ form.updates_tool_developments }}
+                {% if form.updates_tool_developments.errors %}
+                    <span class="error-info">{% for e in form.updates_tool_developments.errors %}{{ e }}{% endfor %}</span>
+                {% endif %}
+            </div>
+
+			<div class="input-row">
+			    <br/><br/>
+			    <button type="submit" name="send" class="right submit">{% trans "Register" %} <span class="icon icon-arrow-right"></span></button>
+            </div>
+
+		</form>
+
+	</div>
+
+{% endblock %}

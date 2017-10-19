@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block body-class %} iframe-content{% endblock %}
+{% block content %}
+	<div class="login-form">
+        {% block login_header %}
+		<h1>{% trans "You're logged in" %}</h1>
+        {% endblock %}
+	</div>
+{% endblock %}

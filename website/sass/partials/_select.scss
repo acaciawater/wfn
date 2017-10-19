@@ -1,0 +1,97 @@
+.hidden_select_container {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.simpleselect {
+	position: relative;
+	color: #333;
+	float: right;
+	margin-bottom: 4px;
+}
+
+.simpleselect,
+.simpleselect .options {
+	width: 224px;
+}
+
+/* compensation for the border */
+.simpleselect .options {
+	width: 220px;
+}
+
+.simpleselect,
+.simpleselect .placeholder,
+.simpleselect .options .option {
+    height: 35px;
+    line-height: 35px;
+}
+
+.simpleselect .placeholder,
+.simpleselect .options .option,
+.simpleselect .options .optgroup .optgroup-label {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+
+.simpleselect .options .optgroup .optgroup-label {
+	cursor: default;
+	font-weight: bold;
+}
+
+.simpleselect .options .optgroup .option,
+.simpleselect.has-optgroup .placeholder {
+	padding: 0 20px;
+}
+
+.simpleselect .placeholder,
+.simpleselect .options {
+	background-color: #FFF;
+	border: 2px solid $branding-grey;
+	@include rounded-corners(3px);
+}
+
+.simpleselect .placeholder .icon{
+	float: right;
+	font-size: 32px;
+}
+
+.simpleselect .placeholder:hover,
+.simpleselect .options:hover{
+	border: 2px solid $branding-blue;
+}
+
+.simpleselect .options {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.simpleselect .options .option,
+.simpleselect .options .optgroup,
+.simpleselect .options .optgroup .optgroup-label {
+	// border-bottom: 1px solid #bbb;
+}
+
+.simpleselect .options .option {
+	color: #beb9c7;
+}
+
+.simpleselect .placeholder:hover,
+.simpleselect.active .placeholder,
+.simpleselect .options .option.active {
+	background: $branding-grey;
+	color: $branding-purple;
+	border-color: $branding-blue;
+}
+
+.simpleselect.disabled .placeholder,
+.simpleselect.disabled .placeholder:hover {
+	background: #f3f3f3;
+	color: #aaa;
+	border-color: #eee;
+	cursor: default;
+}

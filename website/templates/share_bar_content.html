@@ -1,0 +1,7 @@
+{% load i18n website_tags feincms_page_tags %}
+<div class="share-bar share-bar-bg">
+    <span class="share-intro">{% trans "share this article:" %}</span>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ request|get_absolute_url|iriencode }}" class="social-btn facebook"><span class="icon icon-facebook"></span>Facebook</a>
+    <a href="http://twitter.com/share?text={% trans "default_tweet_text" %}&url={{ request|get_absolute_url|iriencode }}" class="social-btn twitter"><span class="icon icon-twitter"></span>Twitter</a>
+    <a href="mailto:{% trans "share.mailto.to" %}?subject={% trans "share.mailto.subject" %}{% if feincms_page %} '{{ feincms_page.title }}'{% endif %}&body={% trans "share.mailto.body" %}{{ request|get_absolute_url|iriencode }}" class="social-btn mail"><span class="icon icon-mail"></span>Mail</a>
+</div>

@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% load i18n feincms_tags feincms_page_tags website_tags applicationcontent_tags website_tags %}
+
+{% block page-title %}
+{% if request|has_fragment:"title_fragment" %}
+{% get_fragment request "title_fragment" %}
+{% else %}
+{{ feincms_page.page_title }}
+{% endif %}
+{% endblock %}
+
+{% block meta-description %}
+{% if request|has_fragment:"meta_description_fragment" %}
+{% get_fragment request "meta_description_fragment" %}
+{% else %}
+{{ feincms_page.meta_description }}
+{% endif %}
+{% endblock %}
+
+{% block meta-keywords %}
+{% if request|has_fragment:"meta_keywords_fragment" %}
+{% get_fragment request "meta_keywords_fragment" %}
+{% else %}
+{{ feincms_page.meta_keywords }}
+{% endif %}
+{% endblock %}
+
+{% block og-title %}
+{% if request|has_fragment:"og_title_fragment" %}
+{% get_fragment request "og_title_fragment" %}
+{% else %}
+{{ feincms_page.page_title }}
+{% endif %}
+{% endblock %}
+
+{% block og-description %}
+{% if request|has_fragment:"og_description_fragment" %}
+{% get_fragment request "og_description_fragment" %}
+{% else %}
+{{ feincms_page.meta_description }}
+{% endif %}
+{% endblock %}
+
+{% block og-image %}
+{% if request|has_fragment:"og_image_fragment" %}
+{% get_fragment request "og_image_fragment" %}
+{% endif %}
+{% endblock %}
+
+
+{% block header %}
+<header class="header-border">
+  <div class="container">
+      {% block logo %}
+    <div class="header-logo left">
+      <a href="/{{ feincms_page.language }}/" title="Water Footprint Network">
+        <img src="{{ STATIC_URL }}images/WaterFootprintNetwork-header.png" width="230" height="98" alt="Water Footprint Network">
+      </a>
+    </div>
+      {% endblock %}
+    <div class="right nav-container">
+
+      {% if not user.is_authenticated %}
+          <a href="{% url 'auth_login' %}" data-rel="shadowbox;height=700;width=555" class="small-nav right shadowbox">{% trans "Login" %} <span class="icon icon-profile"></span></a>
+          {% else %}
+          <a href="{% url 'logout' %}{% if feincms_page.partner_login_required %}?previous-page=/{{ feincms_page.language }}/{% else %}?previous-page={{ feincms_page.get_absolute_url }}{% endif %}" class="small-nav right shadowbox">{% trans "Hello" %} {{ user.username }} {% trans "(logout)" %} <span class="icon icon-profile"></span></a>
+          {% endif %}
+      <a href="http://eepurl.com/L-zwT" class="small-nav right">{% trans "Subscribe to our newsletter" %}<span class="icon icon-mail"></span></a>
+      <a href="{% trans "/en/about-us/news/" context "URL to newsroom page in this language" %}" class="small-nav right">{% trans "Newsroom" %}<span class="icon icon-article"></span></a>
+
+      <div class="clear"></div>
+
+      <form class="searchbar right" id="009044456670657422827:epit2kjddks" action="/{{ feincms_page.language }}{% trans "/search/" %}">
+        <input value="009044456670657422827:epit2kjddks" name="cx" type="hidden"/>
+        <input value="FORID:11" name="cof" type="hidden"/>
+        <input id="q" name="q" size="75" type="text" placeholder="{% trans "Search" %}"/>
+        <button value="Search" name="sa" type="submit"><span class="icon icon-search"></span></button>
+      </form>
+
+      <ul class="lang-dropdown right">
+              <li>
+                  <a href="javascript:void(0);">{{ feincms_page.language|get_language_name }} <span class="icon icon-arrow-dropdown"></span></a>
+                  <ul class="sub_menu">
+                       {% feincms_nav feincms_page level=2 depth=1 as sublevel %}
+                       {% for p in sublevel %}
+                           {% ifnotequal p.language feincms_page.language %}
+                           <li><a href="/{{ p.language }}/">{{ p.language|get_language_name }}</a></li>
+                           {% endifnotequal %}
+                       {% endfor %}
+                  </ul>
+              <li>
+      </ul>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <nav>
+      <ul class="nav header-nav">
+              {% feincms_nav feincms_page level=3 depth=1 as sublevel %}
+              {% for p in sublevel %}
+        <li class="header-sub-menu{% if forloop.last %} header-sub-menu-last{% endif %}">
+          <a href="{{ p.get_absolute_url }}{% if not user.is_authenticated and feincms_page.partner_login_required %}?previous-page={{ feincms_page.get_absolute_url }}{% endif %}">{{ p.title }}</a>
+                  {% feincms_nav p level=4 depth=1 as subsublevel %}
+                  {% if subsublevel %}
+          <ul>
+            <li class="divider"><span class="icon icon-arrow-up"></span><span class="divider2"></span></li>
+            <li><a href="{{ p.get_absolute_url }}" class="sub-title">{% trans "Overview" %}</a></li>
+                      {% for pp in subsublevel %}
+            <li><a href="{{ pp.get_absolute_url }}{% if not user.is_authenticated and feincms_page.partner_login_required %}?previous-page={{ feincms_page.get_absolute_url }}{% endif %}">{{ pp.title }}</a></li>
+            <li>
+                          {% feincms_nav pp level=5 depth=1 as subsubsublevel %}
+                          {% if subsubsublevel %}
+              <ul class="sub-menu2">
+                              {% for ppp in subsubsublevel %}
+                <li><a href="{{ ppp.get_absolute_url }}{% if not user.is_authenticated and feincms_page.partner_login_required %}?previous-page={{ feincms_page.get_absolute_url }}{% endif %}">{{ ppp.title }}</a></li>
+                              {% endfor %}
+              </ul>
+                          {% endif %}
+            </li>
+                      {% endfor %}
+          </ul>
+                  {% endif %}
+        </li>
+              {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="clear"></div>
+  {% endblock %}
+
+
+{% block carousel %}
+
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+  <div id="sidebar">
+  {% block sidebar %}
+  {% endblock %}
+  </div>
+
+{% block footer %}
+<!-- FOOTER -->
+<footer>
+	<div class="container">
+
+		<a href="/{{ feincms_page.language }}/" class="footer-logo left" title="Water Footprint Network">
+			<img src="{{ STATIC_URL }}images/WaterFootprintNetwork-footer.png" width="495" alt="Water Footprint Network">
+		</a>
+
+		<ul class="nav right footer-nav">
+            {% footer_links as sublevel %}
+            {% for p in sublevel %}
+            <li><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></li>
+            {% endfor %}
+		    <li><a href="{% url "auth_login" %}" class="shadowbox" data-rel="shadowbox;height=700;width=555"><span class="icon icon-profile"></span>{% trans "Login" %}</a></li>
+		    <li><a href="/{{ feincms_page.language }}{% trans "/donate/" %}" class="small-btn right">{% trans "Donate" %}</a></li>
+        </ul>
+
+		<div class="clear"></div>
+
+
+        {% feincms_nav feincms_page level=3 depth=1 as sublevel %}
+		<div class="sitemap-row left">
+            {% for p in sublevel %}
+            {% if forloop.counter0 <= 2 %}
+            <ul class="left">
+                <li><b><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></b></li>
+                {% feincms_nav p level=4 depth=1 as subsublevel %}
+                {% for pp in subsublevel %}
+                <li>
+                    <a href="{{ pp.get_absolute_url }}">
+                        {{ pp.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endfor %}
+		</div>
+
+		<div class="sitemap-row left">
+            {% for p in sublevel %}
+            {% if forloop.counter0 <= 4 and forloop.counter0 > 2 %}
+            <ul class="left">
+                <li><b><a href="{{ p.get_absolute_url }}">{{ p.title }}</a></b></li>
+                {% feincms_nav p level=4 depth=1 as subsublevel %}
+                {% for pp in subsublevel %}
+                <li>
+                    <a href="{{ pp.get_absolute_url }}">
+                        {{ pp.title }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endfor %}
+
+			<ul class="left">
+				<li><b><a href="#">{% trans "Don’t miss any update" %}</a></b></li>
+                {% for message in messages %}
+                {% if 'newsletter' in message.tags %}<li>{{ message }}</li>{% endif %}
+                {% endfor %}
+				<li>
+					<form action="{% url 'mc_subscribe' %}" method="post">
+                        {% csrf_token %}
+						<input type="text" name="email" placeholder="{% trans "example@example.com" %}">
+                        <input type="hidden" name="next_page" value="{{ feincms_page.get_absolute_url }}">
+						<input type="submit" value="{% trans "Subscribe" %}">
+					</form>
+					<div class="clear"></div>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/WaterFootprint" class="social-btn"><span class="icon icon-facebook"></span>Facebook</a>
+					<a href="http://twitter.com/#!/waterfootprintn" class="social-btn"><span class="icon icon-twitter"></span>Twitter</a><br><br>
+					<a href="http://www.linkedin.com/groups?mostPopular=&gid=2621964" class="social-btn"><span class="icon icon-linkedin"></span>Linkedin</a>
+					<a href="{% trans "http://www.youtube.com/results?search_query=%22water%20footprint%20network%22" %}" class="social-btn"><span class="icon icon-youtube"></span>Youtube</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+{% endblock %}
+

@@ -1,0 +1,3166 @@
+/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 11, ../../sass/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/* line 30, ../../sass/partials/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 43, ../../sass/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+/* line 53, ../../sass/partials/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 68, ../../sass/partials/_normalize.scss */
+html {
+  font-size: 100%;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+/* line 79, ../../sass/partials/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+/* line 91, ../../sass/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 103, ../../sass/partials/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 111, ../../sass/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+/* line 126, ../../sass/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 131, ../../sass/partials/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 136, ../../sass/partials/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 141, ../../sass/partials/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 146, ../../sass/partials/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 151, ../../sass/partials/_normalize.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+/* line 160, ../../sass/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+/* line 168, ../../sass/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 173, ../../sass/partials/_normalize.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 181, ../../sass/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+/* line 190, ../../sass/partials/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+/* line 200, ../../sass/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 209, ../../sass/partials/_normalize.scss */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+/* line 218, ../../sass/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 231, ../../sass/partials/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+/* line 241, ../../sass/partials/_normalize.scss */
+q {
+  quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+/* line 249, ../../sass/partials/_normalize.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 259, ../../sass/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 267, ../../sass/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 275, ../../sass/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 279, ../../sass/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+/* line 291, ../../sass/partials/_normalize.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 298, ../../sass/partials/_normalize.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+/* line 306, ../../sass/partials/_normalize.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+/* line 316, ../../sass/partials/_normalize.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+/* line 331, ../../sass/partials/_normalize.scss */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 340, ../../sass/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+/* line 352, ../../sass/partials/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+/* line 364, ../../sass/partials/_normalize.scss */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 372, ../../sass/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+/* line 384, ../../sass/partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+/* line 398, ../../sass/partials/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 413, ../../sass/partials/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 425, ../../sass/partials/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+/* line 440, ../../sass/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 453, ../../sass/partials/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+/* line 465, ../../sass/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 479, ../../sass/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 491, ../../sass/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+/* line 500, ../../sass/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 511, ../../sass/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 524, ../../sass/partials/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 529, ../../sass/partials/_normalize.scss */
+iframe {
+  border: none;
+}
+
+/* GRID */
+/* line 2, ../../sass/partials/_grid.scss */
+.container {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 8, ../../sass/partials/_grid.scss */
+.content-left-home {
+  width: 480px;
+  margin-right: 160px;
+  display: block;
+}
+
+/* line 14, ../../sass/partials/_grid.scss */
+.content-right-home {
+  width: 320px;
+  display: block;
+}
+
+/* line 19, ../../sass/partials/_grid.scss */
+.content-left {
+  width: 640px;
+  margin-right: 30px;
+  display: block;
+}
+
+/* line 25, ../../sass/partials/_grid.scss */
+.content-right {
+  width: 290px;
+  display: block;
+}
+
+/* line 30, ../../sass/partials/_grid.scss */
+.content-full-width {
+  width: 960px;
+  display: block;
+}
+
+/* line 37, ../../sass/partials/_grid.scss */
+.content-third .one-third {
+  width: 300px;
+  float: left;
+  margin-right: 30px;
+}
+/* line 43, ../../sass/partials/_grid.scss */
+.content-third .one-third-last {
+  margin-right: 0;
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'rubrikmedium';
+  src: url("../fonts/rubrik_medium-webfont.eot");
+  src: url("../fonts/rubrik_medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubrik_medium-webfont.woff") format("woff"), url("../fonts/rubrik_medium-webfont.ttf") format("truetype"), url("../fonts/rubrik_medium-webfont.svg#rubrikmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubrikbold';
+  src: url("../fonts/rubrik_bold-webfont.eot");
+  src: url("../fonts/rubrik_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubrik_bold-webfont.woff") format("woff"), url("../fonts/rubrik_bold-webfont.ttf") format("truetype"), url("../fonts/rubrik_bold-webfont.svg#rubrikbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubrikextralight';
+  src: url("../fonts/rubrik_extralight-webfont.eot");
+  src: url("../fonts/rubrik_extralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubrik_extralight-webfont.woff") format("woff"), url("../fonts/rubrik_extralight-webfont.ttf") format("truetype"), url("../fonts/rubrik_extralight-webfont.svg#rubrikextralight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubriklight';
+  src: url("../fonts/rubrik_light-webfont.eot");
+  src: url("../fonts/rubrik_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubrik_light-webfont.woff") format("woff"), url("../fonts/rubrik_light-webfont.ttf") format("truetype"), url("../fonts/rubrik_light-webfont.svg#rubriklight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubrik_regularregular';
+  src: url("../fonts/rubrik_regular-webfont.eot");
+  src: url("../fonts/rubrik_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubrik_regular-webfont.woff") format("woff"), url("../fonts/rubrik_regular-webfont.ttf") format("truetype"), url("../fonts/rubrik_regular-webfont.svg#rubrik_regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubriksemibold';
+  src: url("../fonts/rubrik_semibold-webfont.eot");
+  src: url("../fonts/rubrik_semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubrik_semibold-webfont.woff") format("woff"), url("../fonts/rubrik_semibold-webfont.ttf") format("truetype"), url("../fonts/rubrik_semibold-webfont.svg#rubriksemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'wfn-icons';
+  src: url("../fonts/wfn-icons.eot");
+  src: url("../fonts/wfn-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/wfn-icons.ttf") format("truetype"), url("../fonts/wfn-icons.woff") format("woff"), url("../fonts/wfn-icons.svg#wfn-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 79, ../../sass/partials/_fonts.scss */
+.icon {
+  font-family: 'wfn-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 93, ../../sass/partials/_fonts.scss */
+.icon-twitter:before {
+  content: "\e600";
+}
+
+/* line 96, ../../sass/partials/_fonts.scss */
+.icon-search:before {
+  content: "\e601";
+}
+
+/* line 99, ../../sass/partials/_fonts.scss */
+.icon-quote-open:before {
+  content: "\e602";
+}
+
+/* line 102, ../../sass/partials/_fonts.scss */
+.icon-quote-close:before {
+  content: "\e603";
+}
+
+/* line 105, ../../sass/partials/_fonts.scss */
+.icon-profile:before {
+  content: "\e604";
+}
+
+/* line 108, ../../sass/partials/_fonts.scss */
+.icon-mail:before {
+  content: "\e605";
+}
+
+/* line 111, ../../sass/partials/_fonts.scss */
+.icon-linkedin:before {
+  content: "\e606";
+}
+
+/* line 114, ../../sass/partials/_fonts.scss */
+.icon-facebook:before {
+  content: "\e607";
+}
+
+/* line 117, ../../sass/partials/_fonts.scss */
+.icon-document:before {
+  content: "\e608";
+}
+
+/* line 120, ../../sass/partials/_fonts.scss */
+.icon-close:before {
+  content: "\e609";
+}
+
+/* line 123, ../../sass/partials/_fonts.scss */
+.icon-arrow-right:before {
+  content: "\e60a";
+}
+
+/* line 126, ../../sass/partials/_fonts.scss */
+.icon-arrow-dropdown:before {
+  content: "\e60b";
+}
+
+/* line 129, ../../sass/partials/_fonts.scss */
+.icon-arrow-down:before {
+  content: "\e60c";
+}
+
+/* line 132, ../../sass/partials/_fonts.scss */
+.icon-arrow-up:before {
+  content: "\e60d";
+}
+
+/* line 135, ../../sass/partials/_fonts.scss */
+.icon-youtube:before {
+  content: "\e60e";
+}
+
+/* line 138, ../../sass/partials/_fonts.scss */
+.icon-article:before {
+  content: "\e60f";
+}
+
+/* CLASSES */
+/* line 9, ../../sass/partials/_variables.scss */
+.reset-space {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../../sass/partials/_variables.scss */
+.left {
+  float: left;
+}
+
+/* line 18, ../../sass/partials/_variables.scss */
+.right {
+  float: right;
+}
+
+/* line 76, ../../sass/partials/_variables.scss */
+::selection {
+  background: #009BD1;
+  color: #000;
+}
+
+/* line 81, ../../sass/partials/_variables.scss */
+img::selection, iframe::selection, ul::selection {
+  background: #999;
+}
+
+/* line 85, ../../sass/partials/_variables.scss */
+.action-btn {
+  border: 2px solid #301948;
+  text-decoration: none;
+  line-height: 21px;
+  display: inline-block;
+  padding: 7px 10px 7px 20px;
+  color: #301948;
+  font-size: 14px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 97, ../../sass/partials/_variables.scss */
+.action-btn .icon {
+  margin-left: 15px;
+  display: inline-block;
+  text-align: right;
+  line-height: 21px;
+}
+
+/* line 104, ../../sass/partials/_variables.scss */
+p > .action-btn {
+  float: right;
+}
+
+/* line 108, ../../sass/partials/_variables.scss */
+.action-btn:hover {
+  background-color: #301948;
+  color: #FFF;
+  border-color: #301948;
+}
+
+/* line 114, ../../sass/partials/_variables.scss */
+.small-btn {
+  background: #301948;
+  color: #FFF;
+  text-decoration: none;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px;
+  font-size: 14px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+
+/* line 126, ../../sass/partials/_variables.scss */
+.small-btn:hover {
+  color: #301948;
+  background: #edebe5;
+}
+
+/* ====== media ====== */
+/* line 132, ../../sass/partials/_variables.scss */
+.media {
+  margin: 0 0 0 0;
+}
+
+/* line 133, ../../sass/partials/_variables.scss */
+.media, .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+
+/* line 134, ../../sass/partials/_variables.scss */
+.media .img {
+  float: left;
+  margin-right: 20px;
+}
+
+/* line 135, ../../sass/partials/_variables.scss */
+.media .circle {
+  float: left;
+  margin-right: 26px;
+}
+
+/* line 136, ../../sass/partials/_variables.scss */
+.media .drop {
+  float: left;
+  margin-right: 36px;
+}
+
+/* line 137, ../../sass/partials/_variables.scss */
+.media .img img {
+  display: block;
+}
+
+/* line 138, ../../sass/partials/_variables.scss */
+.media .imgExt {
+  float: right;
+  margin-left: 20px;
+}
+
+/* line 139, ../../sass/partials/_variables.scss */
+.media .dropExt {
+  float: right;
+  margin-left: 36px;
+}
+
+/* line 7, ../../sass/style.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #301948;
+  font-size: 15px;
+  background: #FFF;
+}
+/* line 13, ../../sass/style.scss */
+body.full {
+  width: 100%;
+  height: 100%;
+}
+/* line 16, ../../sass/style.scss */
+body.full header {
+  position: relative;
+  z-index: 1;
+}
+/* line 20, ../../sass/style.scss */
+body.full iframe {
+  position: absolute;
+  top: 0;
+  padding-top: 190px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+/* line 29, ../../sass/style.scss */
+body.iframe-content {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 35, ../../sass/style.scss */
+p {
+  font-size: 15px;
+  color: #301948;
+  line-height: 23px;
+}
+
+/* line 41, ../../sass/style.scss */
+.clear {
+  clear: both;
+  float: none;
+}
+
+/* NAV */
+/* line 47, ../../sass/style.scss */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 52, ../../sass/style.scss */
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+/* SMALL NAV */
+/* line 60, ../../sass/style.scss */
+.small-nav {
+  text-decoration: none;
+  font-size: 14px;
+  color: #301948;
+  margin: 13px 0 15px 25px;
+  line-height: 22px;
+}
+/* line 67, ../../sass/style.scss */
+.small-nav .icon {
+  background: #301948;
+  color: #FFF;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+  vertical-align: middle;
+  margin: -5px 0 0 8px;
+}
+/* line 81, ../../sass/style.scss */
+.small-nav .icon-article:before {
+  font-size: 0.7em;
+  vertical-align: top;
+}
+
+/* line 87, ../../sass/style.scss */
+.small-nav:hover {
+  text-decoration: underline;
+}
+
+/* BREADCRUMB */
+/* line 92, ../../sass/style.scss */
+.breadcrumb {
+  padding: 0;
+  margin: 40px 0 20px 0;
+  color: #bfb8c6;
+  font-size: 14px;
+  text-transform: lowercase;
+  float: left;
+}
+/* line 100, ../../sass/style.scss */
+.breadcrumb li:before {
+  content: "/";
+  font-size: 14px;
+  margin: 0 10px;
+}
+/* line 105, ../../sass/style.scss */
+.breadcrumb li:first-child:before {
+  content: normal;
+}
+/* line 108, ../../sass/style.scss */
+.breadcrumb li a {
+  color: #bfb8c6;
+  text-decoration: none;
+}
+/* line 112, ../../sass/style.scss */
+.breadcrumb li a:hover {
+  color: #301948;
+}
+/* line 117, ../../sass/style.scss */
+.breadcrumb li.current span {
+  color: #776887;
+}
+/* line 120, ../../sass/style.scss */
+.breadcrumb li.current a:hover {
+  color: #301948;
+}
+
+/* HEADER */
+/* line 127, ../../sass/style.scss */
+header {
+  width: 100%;
+  display: block;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: left;
+}
+/* line 133, ../../sass/style.scss */
+header nav {
+  float: left;
+  display: block;
+  width: 100%;
+}
+
+/* line 140, ../../sass/style.scss */
+.header-border {
+  border-bottom: 1px solid #dcd8cc;
+  background-color: #fff;
+}
+
+/* line 145, ../../sass/style.scss */
+.nav-container {
+  width: 700px;
+}
+
+/* line 149, ../../sass/style.scss */
+.lang-dropdown {
+  width: 155px;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  margin: 0 20px;
+  padding: 0;
+  float: right;
+  height: 26px;
+  /* VISIBLE ITEM */
+}
+/* line 161, ../../sass/style.scss */
+.lang-dropdown li {
+  list-style: none;
+  text-indent: 14px;
+  background: #edebe5;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  /* SECOND LEVEL */
+}
+/* line 171, ../../sass/style.scss */
+.lang-dropdown li .icon {
+  font-size: 32px;
+  display: inline-block;
+  float: right;
+  margin-right: 3px;
+  line-height: 25px;
+}
+/* line 179, ../../sass/style.scss */
+.lang-dropdown li a {
+  color: #301948;
+  text-decoration: none;
+  display: block;
+}
+/* line 186, ../../sass/style.scss */
+.lang-dropdown li ul {
+  display: none;
+  margin: 0 0 0 0;
+  padding: 5px 0 0 0;
+  z-index: 10;
+  position: absolute;
+  background: #edebe5;
+}
+/* line 194, ../../sass/style.scss */
+.lang-dropdown li ul li {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+/* line 204, ../../sass/style.scss */
+.lang-dropdown:hover li {
+  background: #faf9f7;
+  -webkit-border-top-left-radius: 13px;
+  -webkit-border-top-right-radius: 13px;
+  -moz-border-radius-topleft: 13px;
+  -moz-border-radius-topright: 13px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  -webkit-border-bottom-left-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 211, ../../sass/style.scss */
+.lang-dropdown:hover li ul {
+  display: block;
+  -webkit-border-bottom-left-radius: 13px;
+  -webkit-border-bottom-right-radius: 13px;
+  -moz-border-radius-bottomleft: 13px;
+  -moz-border-radius-bottomright: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 215, ../../sass/style.scss */
+.lang-dropdown:hover li ul li {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  background: #edebe5;
+}
+/* line 219, ../../sass/style.scss */
+.lang-dropdown:hover li ul li:hover {
+  background: #faf9f7;
+}
+/* line 225, ../../sass/style.scss */
+.lang-dropdown:hover li:last-child {
+  -webkit-border-bottom-left-radius: 13px;
+  -webkit-border-bottom-right-radius: 13px;
+  -moz-border-radius-bottomleft: 13px;
+  -moz-border-radius-bottomright: 13px;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+
+/* line 230, ../../sass/style.scss */
+.header-nav {
+  text-align: left;
+  width: 960px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+/* line 236, ../../sass/style.scss */
+.header-nav li {
+  margin: 0 20px;
+}
+/* line 240, ../../sass/style.scss */
+.header-nav li a {
+  display: block;
+  color: #009BD1;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* line 247, ../../sass/style.scss */
+.header-nav li a:hover {
+  color: #009BD1;
+  text-decoration: underline;
+}
+/* line 254, ../../sass/style.scss */
+.header-nav li:first-child {
+  margin: 0 22px 0 0;
+}
+
+/* line 260, ../../sass/style.scss */
+.header-sub-menu {
+  position: relative;
+}
+/* line 264, ../../sass/style.scss */
+.header-sub-menu ul {
+  display: none;
+  margin: 0;
+  padding: 0 0 10px 0;
+  z-index: 6;
+  position: absolute;
+  background: #009BD1;
+  border: 0;
+  width: 385px;
+  text-align: left;
+  margin-left: -30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 278, ../../sass/style.scss */
+.header-sub-menu ul .divider {
+  display: block;
+  height: 11px;
+  width: 100%;
+  background: #FFF;
+}
+/* line 284, ../../sass/style.scss */
+.header-sub-menu ul .divider .icon-arrow-up {
+  color: #009BD1;
+  font-size: 40px;
+  display: inline;
+  line-height: 17px;
+  padding-left: 15px;
+}
+/* line 294, ../../sass/style.scss */
+.header-sub-menu ul .divider:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+/* line 303, ../../sass/style.scss */
+.header-sub-menu ul .divider:after {
+  content: '';
+  -moz-border-radius: 8px 0 0 0;
+  border-radius: 8px 0 0 0;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  background: #009BD1;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 317, ../../sass/style.scss */
+.header-sub-menu ul .divider2:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  left: 377px;
+  z-index: 1;
+}
+/* line 327, ../../sass/style.scss */
+.header-sub-menu ul .divider2:after {
+  background: #009BD1;
+  content: '';
+  -moz-border-radius: 0 8px 0 0;
+  border-radius: 0 8px 0 0;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 10px;
+  left: 377px;
+  z-index: 1;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 342, ../../sass/style.scss */
+.header-sub-menu ul li {
+  font-size: 14px;
+  padding: 0 !important;
+  margin: -1px 0 0 0 !important;
+}
+/* line 346, ../../sass/style.scss */
+.header-sub-menu ul li a {
+  padding-left: 30px;
+  display: block;
+  line-height: 30px;
+  color: #6bd9ff;
+}
+/* line 352, ../../sass/style.scss */
+.header-sub-menu ul li a:hover {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "rubrikmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: transparent url("../images/icon-arrow-menu.png") 12px center no-repeat;
+}
+/* line 359, ../../sass/style.scss */
+.header-sub-menu ul li .sub-menu2 {
+  margin: 0;
+  position: static;
+  padding: 0;
+  padding-left: 30px;
+  width: 355px;
+}
+
+/* line 372, ../../sass/style.scss */
+.header-sub-menu-last ul {
+  position: absolute;
+  right: 0%;
+  margin-left: 192px;
+  margin-right: -30px;
+}
+/* line 381, ../../sass/style.scss */
+.header-sub-menu-last ul .divider .icon-arrow-up {
+  color: #009BD1;
+  font-size: 40px;
+  display: inline;
+  line-height: 17px;
+  right: 15px;
+  position: absolute;
+}
+
+/* line 396, ../../sass/style.scss */
+.header-sub-menu:hover ul {
+  display: block;
+}
+
+/* line 401, ../../sass/style.scss */
+.header-sub-menu ul li .sub-title {
+  border-bottom: 1px solid #1fc5ff;
+  display: block;
+  margin: 0 30px 10px 0;
+  padding: 12px 0 8px 30px;
+  color: #6bd9ff;
+  font-size: 15px;
+}
+
+/* line 410, ../../sass/style.scss */
+.searchbar {
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border-radius: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  height: 26px;
+  width: 122px;
+  padding: 0 0 0 14px;
+  float: right;
+  display: block;
+  background: #edebe5;
+  color: #301948;
+}
+/* line 422, ../../sass/style.scss */
+.searchbar input[type=text] {
+  color: #301948;
+  display: block;
+  float: left;
+  height: 26px;
+  line-height: 26px;
+  width: 87px;
+  font-size: 14px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: 0;
+}
+/* line 437, ../../sass/style.scss */
+.searchbar button {
+  float: left;
+  width: 25px;
+  height: 25px;
+  background: #edebe5;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: #301948;
+}
+/* line 447, ../../sass/style.scss */
+.searchbar button .icon {
+  font-size: 24px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+/* line 457, ../../sass/style.scss */
+.searchbar ::-webkit-input-placeholder {
+  color: #301948;
+}
+/* line 461, ../../sass/style.scss */
+.searchbar :-moz-placeholder {
+  /* Firefox 18- */
+  color: #301948;
+}
+/* line 465, ../../sass/style.scss */
+.searchbar ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #301948;
+}
+/* line 469, ../../sass/style.scss */
+.searchbar :-ms-input-placeholder {
+  color: #301948;
+}
+
+/* line 474, ../../sass/style.scss */
+.header-logo {
+  width: 230px;
+  height: 98px;
+  margin: 25px 0 20px 0;
+  padding: 0;
+}
+
+/* CONTENT */
+/* BLOCKS */
+/* line 2, ../../sass/partials/_blocks.scss */
+.block {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+/* line 7, ../../sass/partials/_blocks.scss */
+.block h1, .block h2, .block h3, .block h4 {
+  font-weight: normal;
+  color: #009BD1;
+  width: 100%;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+/* line 16, ../../sass/partials/_blocks.scss */
+.block h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+/* line 21, ../../sass/partials/_blocks.scss */
+.block h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 18px;
+}
+/* line 27, ../../sass/partials/_blocks.scss */
+.block h2 a, .block h3 a {
+  text-decoration: none;
+  color: #301948;
+}
+/* line 32, ../../sass/partials/_blocks.scss */
+.block h2 a:hover, .block h3 a:hover {
+  color: #009BD1;
+}
+/* line 36, ../../sass/partials/_blocks.scss */
+.block h3 {
+  color: #301948;
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+/* line 42, ../../sass/partials/_blocks.scss */
+.block a {
+  color: #301948;
+}
+/* line 46, ../../sass/partials/_blocks.scss */
+.block img {
+  width: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 51, ../../sass/partials/_blocks.scss */
+.block img.main-image {
+  width: 320px;
+  height: 210px;
+  margin-bottom: 5px;
+}
+/* line 57, ../../sass/partials/_blocks.scss */
+.block img.left {
+  margin-top: 0;
+  margin-right: 20px;
+}
+/* line 62, ../../sass/partials/_blocks.scss */
+.block img.right {
+  margin-top: 0;
+  margin-left: 20px;
+}
+/* line 67, ../../sass/partials/_blocks.scss */
+.block .share-bar {
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-bottom: 25px;
+}
+/* line 73, ../../sass/partials/_blocks.scss */
+.block .share-bar .share-intro {
+  float: left;
+  display: block;
+  font-size: 14px;
+  margin-right: 20px;
+  line-height: 20px;
+}
+/* line 82, ../../sass/partials/_blocks.scss */
+.block .share-bar-bg {
+  width: auto;
+  float: left;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #edebe5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 93, ../../sass/partials/_blocks.scss */
+.block p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+/* line 97, ../../sass/partials/_blocks.scss */
+.block p.introduction {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 103, ../../sass/partials/_blocks.scss */
+.block p.page-introduction {
+  max-width: 640px;
+}
+/* line 107, ../../sass/partials/_blocks.scss */
+.block p img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+/* line 113, ../../sass/partials/_blocks.scss */
+.block p img.left {
+  width: 50%;
+  margin-top: 0;
+  margin-right: 20px;
+}
+/* line 119, ../../sass/partials/_blocks.scss */
+.block p img.right {
+  width: 50%;
+  margin-top: 0;
+  margin-left: 20px;
+}
+/* line 125, ../../sass/partials/_blocks.scss */
+.block p .photo-caption {
+  width: 100%;
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+/* line 133, ../../sass/partials/_blocks.scss */
+.block ul, .block ol {
+  padding: 0 0 0 15px;
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  width: auto;
+  line-height: 24px;
+}
+/* line 140, ../../sass/partials/_blocks.scss */
+.block ul li, .block ol li {
+  padding-left: 30px;
+  color: #009BD1;
+}
+/* line 144, ../../sass/partials/_blocks.scss */
+.block ul li span, .block ol li span {
+  color: #301948;
+  font-weight: normal;
+}
+/* line 150, ../../sass/partials/_blocks.scss */
+.block ul li ul, .block ul li ol, .block ol li ul, .block ol li ol {
+  margin: 0;
+}
+/* line 156, ../../sass/partials/_blocks.scss */
+.block ul li {
+  color: #301948;
+  list-style-image: url("../images/icon-arrow-list.png");
+}
+/* line 162, ../../sass/partials/_blocks.scss */
+.block ol {
+  font-weight: bold;
+}
+/* line 166, ../../sass/partials/_blocks.scss */
+.block blockquote {
+  margin: 11px 0 31px;
+  padding: 35px 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #edebe5;
+  border-bottom: 1px solid #edebe5;
+  position: relative;
+}
+/* line 176, ../../sass/partials/_blocks.scss */
+.block blockquote p {
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 25px;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+/* line 184, ../../sass/partials/_blocks.scss */
+.block blockquote span {
+  color: #009BD1;
+  font-size: 14px;
+}
+/* line 189, ../../sass/partials/_blocks.scss */
+.block blockquote .open-quote, .block blockquote .close-quote {
+  display: block;
+  height: 22px;
+  width: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+}
+/* line 197, ../../sass/partials/_blocks.scss */
+.block blockquote .open-quote .icon, .block blockquote .close-quote .icon {
+  color: #301948;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 21px;
+}
+/* line 205, ../../sass/partials/_blocks.scss */
+.block blockquote .open-quote {
+  top: -11px;
+  background: #FFF;
+}
+/* line 210, ../../sass/partials/_blocks.scss */
+.block blockquote .close-quote {
+  bottom: -11px;
+  background: #FFF;
+}
+/* line 217, ../../sass/partials/_blocks.scss */
+.block .banner-block {
+  float: left;
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+}
+/* line 223, ../../sass/partials/_blocks.scss */
+.block .banner-block .banner-inner1 {
+  background: #6eb3a2;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  position: relative;
+}
+/* line 229, ../../sass/partials/_blocks.scss */
+.block .banner-block .banner-inner2 {
+  background: #015f81;
+  /* The Fallback */
+  background: rgba(1, 95, 129, 0.7);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  position: relative;
+  left: 15px;
+  top: 15px;
+  padding: 10px 30px 30px 10px;
+}
+/* line 240, ../../sass/partials/_blocks.scss */
+.block .banner-block h2 a {
+  font-size: 30px;
+  color: #FFF;
+  line-height: 36px;
+  margin: 0;
+}
+/* line 247, ../../sass/partials/_blocks.scss */
+.block .banner-block h2 a:hover {
+  color: #fff;
+}
+/* line 251, ../../sass/partials/_blocks.scss */
+.block .banner-block .small-btn {
+  margin: 0;
+  background: #FFF;
+  color: #015f81;
+}
+/* line 257, ../../sass/partials/_blocks.scss */
+.block .banner-block .small-btn:hover {
+  background: #301948;
+  color: #FFF;
+}
+/* line 262, ../../sass/partials/_blocks.scss */
+.block .banner-block a {
+  color: #FFF;
+  margin: 20px 0 0 0;
+  display: block;
+}
+/* line 269, ../../sass/partials/_blocks.scss */
+.block .article {
+  float: left;
+  margin-bottom: 45px;
+  width: 100%;
+}
+/* line 274, ../../sass/partials/_blocks.scss */
+.block .article img {
+  width: 180px;
+}
+/* line 278, ../../sass/partials/_blocks.scss */
+.block .article p {
+  margin-bottom: 5px;
+}
+/* line 282, ../../sass/partials/_blocks.scss */
+.block .article a {
+  color: #009BD1;
+}
+/* line 286, ../../sass/partials/_blocks.scss */
+.block .article a:hover {
+  text-decoration: none;
+}
+/* line 290, ../../sass/partials/_blocks.scss */
+.block .article h3 a {
+  color: #301948;
+}
+/* line 294, ../../sass/partials/_blocks.scss */
+.block .article h3 a:hover {
+  color: #009BD1;
+}
+/* line 297, ../../sass/partials/_blocks.scss */
+.block .article .news-date {
+  color: #938aa2;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 306, ../../sass/partials/_blocks.scss */
+.block .event {
+  margin-bottom: 30px;
+  width: 100%;
+}
+/* line 311, ../../sass/partials/_blocks.scss */
+.block .event .circle {
+  width: 115px;
+  height: 90px;
+  padding-top: 25px;
+  text-align: center;
+  -webkit-border-radius: 58px;
+  -moz-border-radius: 58px;
+  -ms-border-radius: 58px;
+  -o-border-radius: 58px;
+  border-radius: 58px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  background: #6eb3a2;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* line 323, ../../sass/partials/_blocks.scss */
+.block .event .circle:hover {
+  background: #301948;
+  color: #FFF;
+}
+/* line 328, ../../sass/partials/_blocks.scss */
+.block .event .event-date {
+  font-family: "rubrikmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: 25px;
+  line-height: 25px;
+}
+/* line 335, ../../sass/partials/_blocks.scss */
+.block .event .event-month {
+  font-family: "rubrikmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: 17px;
+  line-height: 17px;
+}
+/* line 342, ../../sass/partials/_blocks.scss */
+.block .event .event-year {
+  display: block;
+  font-size: 14px;
+  color: #B7D9D1;
+  padding: 6px 0;
+}
+/* line 349, ../../sass/partials/_blocks.scss */
+.block .event .event-place {
+  display: block;
+  color: #a5a5a5;
+  margin-bottom: 15px;
+}
+/* line 355, ../../sass/partials/_blocks.scss */
+.block .event a {
+  color: #009BD1;
+}
+/* line 359, ../../sass/partials/_blocks.scss */
+.block .event a:hover {
+  text-decoration: none;
+}
+/* line 363, ../../sass/partials/_blocks.scss */
+.block .event h3 a {
+  color: #301948;
+}
+/* line 367, ../../sass/partials/_blocks.scss */
+.block .event h3 a:hover {
+  color: #009BD1;
+}
+/* line 373, ../../sass/partials/_blocks.scss */
+.block .people {
+  width: 100%;
+  margin-bottom: 35px;
+}
+/* line 377, ../../sass/partials/_blocks.scss */
+.block .people img {
+  width: 116px;
+  -webkit-border-radius: 58px;
+  -moz-border-radius: 58px;
+  -ms-border-radius: 58px;
+  -o-border-radius: 58px;
+  border-radius: 58px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 382, ../../sass/partials/_blocks.scss */
+.block .people .bd span {
+  width: 50%;
+}
+/* line 386, ../../sass/partials/_blocks.scss */
+.block .people .people-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+}
+/* line 392, ../../sass/partials/_blocks.scss */
+.block .people .people-title i {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 400, ../../sass/partials/_blocks.scss */
+.block .people .people-contact {
+  font-size: 15px;
+  line-height: 22px;
+  color: #009BD1;
+}
+/* line 404, ../../sass/partials/_blocks.scss */
+.block .people .people-contact a {
+  font-size: 15px;
+  line-height: 22px;
+  color: #009BD1;
+  text-decoration: none;
+}
+/* line 409, ../../sass/partials/_blocks.scss */
+.block .people .people-contact a:hover {
+  text-decoration: underline;
+}
+/* line 415, ../../sass/partials/_blocks.scss */
+.block .people p {
+  margin-top: 20px;
+}
+/* line 421, ../../sass/partials/_blocks.scss */
+.block .publication {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #edebe5;
+}
+/* line 426, ../../sass/partials/_blocks.scss */
+.block .publication .pub-year {
+  color: #009BD1;
+  font-size: 20px;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 432, ../../sass/partials/_blocks.scss */
+.block .publication p {
+  margin-bottom: 20px;
+}
+/* line 438, ../../sass/partials/_blocks.scss */
+.block .drop {
+  margin-bottom: 35px;
+  position: relative;
+}
+/* line 443, ../../sass/partials/_blocks.scss */
+.block .drop .mask {
+  position: absolute;
+  display: block;
+  width: 284px;
+  height: 278px;
+  z-index: 2;
+  border: 1px solid #FFF;
+}
+/* line 450, ../../sass/partials/_blocks.scss */
+.block .drop .mask img {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  pointer-events: none;
+  width: 284px;
+  height: 278px;
+}
+/* line 458, ../../sass/partials/_blocks.scss */
+.block .drop a img {
+  width: 284px;
+  height: 278px;
+  display: inline-block;
+}
+/* line 464, ../../sass/partials/_blocks.scss */
+.block .drop .sub-header {
+  display: block;
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+/* line 476, ../../sass/partials/_blocks.scss */
+.one-third {
+  margin-bottom: 35px;
+}
+/* line 479, ../../sass/partials/_blocks.scss */
+.one-third h2 {
+  font-size: 22px;
+}
+/* line 483, ../../sass/partials/_blocks.scss */
+.one-third .third-header {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 25px;
+}
+
+/* line 493, ../../sass/partials/_blocks.scss */
+.infographic .bd {
+  float: left;
+}
+/* line 495, ../../sass/partials/_blocks.scss */
+.infographic .bd img {
+  display: block;
+  margin-left: 5px;
+}
+/* line 501, ../../sass/partials/_blocks.scss */
+.infographic .liters {
+  font-size: 32px;
+  font-family: "rubriksemibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #009BD1;
+  display: block;
+  margin-top: 10px;
+}
+/* line 509, ../../sass/partials/_blocks.scss */
+.infographic .descr {
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100px;
+  display: block;
+}
+
+/* line 516, ../../sass/partials/_blocks.scss */
+.full-news {
+  margin-bottom: 35px;
+}
+/* line 519, ../../sass/partials/_blocks.scss */
+.full-news img {
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 524, ../../sass/partials/_blocks.scss */
+.full-news p {
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  width: 80%;
+  margin: 0 0 20px 5%;
+  float: left;
+}
+/* line 531, ../../sass/partials/_blocks.scss */
+.full-news p a {
+  text-decoration: none;
+}
+/* line 534, ../../sass/partials/_blocks.scss */
+.full-news p a:hover {
+  color: #009BD1;
+}
+/* line 540, ../../sass/partials/_blocks.scss */
+.full-news .news-date {
+  width: 75px;
+  display: inline-block;
+  float: left;
+  color: #fff;
+  padding: 3px 5px 2px 5px;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #6eb3a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ASIDE */
+/* line 558, ../../sass/partials/_blocks.scss */
+aside .banner-block {
+  float: left;
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+}
+/* line 564, ../../sass/partials/_blocks.scss */
+aside .banner-block .banner-inner1 {
+  background: #6eb3a2;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  position: relative;
+}
+/* line 570, ../../sass/partials/_blocks.scss */
+aside .banner-block .banner-inner2 {
+  background: #015f81;
+  /* The Fallback */
+  background: rgba(1, 95, 129, 0.7);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  position: relative;
+  left: 15px;
+  top: 15px;
+  padding: 10px 30px 30px 10px;
+}
+/* line 581, ../../sass/partials/_blocks.scss */
+aside .banner-block h2 a {
+  font-size: 30px;
+  color: #FFF;
+  line-height: 36px;
+  margin: 0;
+  text-decoration: none;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* line 590, ../../sass/partials/_blocks.scss */
+aside .banner-block h2 a:hover {
+  color: #fff;
+}
+/* line 594, ../../sass/partials/_blocks.scss */
+aside .banner-block .small-btn {
+  margin: 0;
+  background: #FFF;
+  color: #015f81;
+}
+/* line 600, ../../sass/partials/_blocks.scss */
+aside .banner-block .small-btn:hover {
+  background: #301948;
+  color: #FFF;
+}
+/* line 605, ../../sass/partials/_blocks.scss */
+aside .banner-block a {
+  color: #FFF;
+  margin: 20px 0 0 0;
+  display: block;
+}
+/* line 611, ../../sass/partials/_blocks.scss */
+aside .block {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 615, ../../sass/partials/_blocks.scss */
+aside .block h4 {
+  font-size: 24px;
+  margin: 0 15px 20px 15px;
+  color: #301948;
+}
+/* line 621, ../../sass/partials/_blocks.scss */
+aside .block h5 {
+  margin: 0 0 25px 0;
+  padding: 0;
+  color: #301948;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+/* line 630, ../../sass/partials/_blocks.scss */
+aside .block .action-btn {
+  width: 84%;
+}
+/* line 633, ../../sass/partials/_blocks.scss */
+aside .block .action-btn .icon {
+  float: right;
+}
+/* line 639, ../../sass/partials/_blocks.scss */
+aside .calendar-inner {
+  background: #edebe5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  width: 84%;
+  padding: 8%;
+  float: left;
+}
+/* line 647, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .event {
+  margin-bottom: 20px;
+}
+/* line 651, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .event .circle {
+  width: 52px;
+  height: 42px;
+  padding: 10px 0 0 0;
+  margin: 0 10px 0 0;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+  border-radius: 26px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  color: #FFF;
+  background-color: #6eb3a2;
+}
+/* line 661, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .event .circle .event-date {
+  font-size: 18px;
+  line-height: 18px;
+}
+/* line 666, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .event .circle .event-month {
+  font-size: 13px;
+  line-height: 13px;
+}
+/* line 671, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .event .circle:hover {
+  background: #FFF;
+  color: #6eb3a2;
+}
+/* line 679, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .bd h3 {
+  color: #FFF;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 684, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .bd h3 a {
+  line-height: 18px;
+}
+/* line 687, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .bd h3 a:hover {
+  text-decoration: underline;
+}
+/* line 692, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .bd .event-place {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+/* line 698, ../../sass/partials/_blocks.scss */
+aside .calendar-inner .action-btn:hover {
+  border-color: #301948;
+}
+/* line 704, ../../sass/partials/_blocks.scss */
+aside .rel-news-inner {
+  background: #edebe5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  width: 84%;
+  padding: 8%;
+  float: left;
+}
+/* line 713, ../../sass/partials/_blocks.scss */
+aside .rel-news-inner .rel-news-item a {
+  text-decoration: none;
+}
+/* line 716, ../../sass/partials/_blocks.scss */
+aside .rel-news-inner .rel-news-item a:hover {
+  text-decoration: underline;
+}
+/* line 720, ../../sass/partials/_blocks.scss */
+aside .rel-news-inner .rel-news-item span {
+  color: #FFFFFF;
+  font-size: 13px;
+  padding: 3px 5px 2px 5px;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  background: #6eb3a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 729, ../../sass/partials/_blocks.scss */
+aside .rel-news-inner .rel-news-item p {
+  margin: 5px 0 25px 0;
+}
+/* line 735, ../../sass/partials/_blocks.scss */
+aside .report-inner {
+  background: #edebe5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  width: 84%;
+  padding: 8%;
+  float: left;
+}
+/* line 742, ../../sass/partials/_blocks.scss */
+aside .report-inner a {
+  text-decoration: none;
+}
+/* line 746, ../../sass/partials/_blocks.scss */
+aside .report-inner .icon-document {
+  color: #6eb3a2;
+  font-size: 70px;
+  width: 40px;
+  display: block;
+  text-indent: -15px;
+  line-height: 60px;
+}
+/* line 755, ../../sass/partials/_blocks.scss */
+aside .report-inner p {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+/* FOOTER */
+/* line 485, ../../sass/style.scss */
+footer {
+  float: left;
+  width: 100%;
+  min-width: 980px;
+  display: block;
+  background: #edebe5;
+  margin: 20px 0 0 0;
+  padding: 45px 0;
+}
+
+/* line 495, ../../sass/style.scss */
+.footer-logo {
+  width: 430px;
+  height: 108px;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+/* line 502, ../../sass/style.scss */
+.footer-nav {
+  margin-top: 15px;
+}
+/* line 506, ../../sass/style.scss */
+.footer-nav li {
+  margin: 0 18px;
+}
+/* line 510, ../../sass/style.scss */
+.footer-nav li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #301948;
+  float: right;
+  line-height: 32px;
+}
+/* line 518, ../../sass/style.scss */
+.footer-nav li a .icon {
+  font-size: 32px;
+  display: inline-block;
+  margin-right: 5px;
+  float: left;
+  line-height: 32px;
+}
+/* line 527, ../../sass/style.scss */
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
+/* line 530, ../../sass/style.scss */
+.footer-nav li .small-btn {
+  color: #ffffff;
+  line-height: 26px;
+}
+/* line 534, ../../sass/style.scss */
+.footer-nav li .small-btn:hover {
+  background-color: #ffffff;
+  color: #301948;
+  text-decoration: none;
+}
+/* line 541, ../../sass/style.scss */
+.footer-nav li:last-child {
+  margin: 0 0 0 18px;
+}
+
+/* SITEMAP */
+/* line 547, ../../sass/style.scss */
+.sitemap-row {
+  width: 855px;
+  margin-left: 115px;
+  margin-bottom: 35px;
+}
+/* line 552, ../../sass/style.scss */
+.sitemap-row ul {
+  list-style: none;
+  margin: 0 20px 0 0;
+  padding: 0;
+  width: 265px;
+}
+/* line 560, ../../sass/style.scss */
+.sitemap-row ul li b a {
+  font-family: "rubrikmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #301948;
+  font-weight: normal;
+  margin-bottom: 20px;
+  display: block;
+}
+/* line 570, ../../sass/style.scss */
+.sitemap-row ul li a {
+  color: #685877;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 20px;
+}
+/* line 577, ../../sass/style.scss */
+.sitemap-row ul li a:hover {
+  text-decoration: underline;
+}
+/* line 581, ../../sass/style.scss */
+.sitemap-row ul li form {
+  margin-bottom: 20px;
+  float: left;
+}
+/* line 586, ../../sass/style.scss */
+.sitemap-row ul li input[type=text] {
+  background: #FFF;
+  border: 0;
+  padding: 0 10px;
+  height: 27px;
+  line-height: 27px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  float: left;
+  font-size: 13px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 600, ../../sass/style.scss */
+.sitemap-row ul li input[type=submit] {
+  background: #009BD1;
+  color: #FFF;
+  border: 0;
+  height: 28px;
+  padding: 0 10px;
+  margin: 0;
+  float: left;
+  font-size: 13px;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 615, ../../sass/style.scss */
+.sitemap-row ul li input[type=submit]:hover {
+  background: #301948;
+}
+
+/* line 623, ../../sass/style.scss */
+.social-btn {
+  display: block;
+  color: #301948 !important;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  float: left;
+  padding: 0 5px 0 0;
+}
+/* line 632, ../../sass/style.scss */
+.social-btn .icon {
+  display: block;
+  font-size: 30px;
+  line-height: 20px;
+  float: left;
+}
+/* line 639, ../../sass/style.scss */
+.social-btn .icon-mail {
+  font-size: 26px;
+}
+
+/* line 644, ../../sass/style.scss */
+.social-btn:hover {
+  text-decoration: underline;
+}
+
+/* FORM */
+/* line 650, ../../sass/style.scss */
+form.wfn-form input[type='text'], form.wfn-form input[type='password'],
+form.wfn-form input.text, form.wfn-form input.password {
+  border: 2px solid #edebe5;
+  height: 35px;
+  line-height: 35px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  padding: 0 15px;
+  font-size: 14px;
+  color: #301948;
+  display: block;
+}
+/* line 661, ../../sass/style.scss */
+form.wfn-form input[type='text']:focus, form.wfn-form input[type='password']:focus,
+form.wfn-form input.text:focus, form.wfn-form input.password:focus {
+  border-color: #009BD1;
+}
+/* line 666, ../../sass/style.scss */
+form.wfn-form input[type='checkbox'] {
+  margin-top: 0.7em;
+}
+/* line 670, ../../sass/style.scss */
+form.wfn-form button.submit {
+  border: 2px solid #301948;
+  text-decoration: none;
+  line-height: 35px;
+  display: inline-block;
+  padding: 0 20px 0 20px;
+  color: #301948;
+  font-size: 14px;
+  background: transparent;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 683, ../../sass/style.scss */
+form.wfn-form button.submit .icon {
+  margin-left: 15px;
+  display: inline-block;
+  text-align: right;
+  line-height: 35px;
+}
+/* line 691, ../../sass/style.scss */
+form.wfn-form button.submit:hover {
+  background: #301948;
+  color: #FFF;
+}
+
+/* line 697, ../../sass/style.scss */
+.login-form {
+  width: 455px;
+  height: 475px;
+  padding: 40px 50px;
+}
+/* line 702, ../../sass/style.scss */
+.login-form h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #009BD1;
+  font-weight: normal;
+  font-size: 24px;
+}
+/* line 710, ../../sass/style.scss */
+.login-form h1 a {
+  font-size: 14px;
+  margin-left: 10px;
+  color: #009BD1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 718, ../../sass/style.scss */
+.login-form .input-row {
+  width: 455px;
+  float: left;
+  margin-bottom: 4px;
+}
+/* line 723, ../../sass/style.scss */
+.login-form .input-row label {
+  width: 230px;
+  float: left;
+  line-height: 35px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 14px;
+}
+/* line 733, ../../sass/style.scss */
+.login-form .input-row input {
+  width: 190px;
+  float: right;
+  margin: 0;
+  display: block;
+}
+/* line 740, ../../sass/style.scss */
+.login-form .input-row select {
+  width: 220px;
+  height: 39px;
+}
+
+/* line 747, ../../sass/style.scss */
+.required {
+  color: #F00;
+}
+
+/* line 751, ../../sass/style.scss */
+.error-msg {
+  width: 451px;
+  padding: 8px 0 8px 0;
+  margin-bottom: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  border: 2px solid #edebe5;
+}
+/* line 758, ../../sass/style.scss */
+.error-msg span {
+  font-size: 30px;
+  float: left;
+  line-height: 17px;
+  color: #F00;
+}
+
+/* line 767, ../../sass/style.scss */
+.success-msg {
+  width: 451px;
+  padding: 8px 0 8px 0;
+  margin-bottom: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+  border: 2px solid #edebe5;
+}
+/* line 774, ../../sass/style.scss */
+.success-msg span {
+  font-size: 30px;
+  float: left;
+  line-height: 17px;
+  color: green;
+}
+
+/* line 781, ../../sass/style.scss */
+.error-info {
+  color: red;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 80%;
+}
+
+/* GOOGLE CSE */
+/* line 790, ../../sass/style.scss */
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: 0 !important;
+}
+
+/* line 794, ../../sass/style.scss */
+.gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {
+  padding-left: 0 !important;
+}
+
+/* line 798, ../../sass/style.scss */
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+  font-size: 15px !important;
+  line-height: 21px !important;
+}
+
+/* line 803, ../../sass/style.scss */
+.gsc-result-info {
+  padding-left: 0px !important;
+}
+
+/* line 807, ../../sass/style.scss */
+input.gsc-search-button.gsc-search-button-v2 {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+
+/* line 811, ../../sass/style.scss */
+.gsc-orderby-label, .gsc-result-info {
+  color: #bfb8c6 !important;
+  font-size: 14px !important;
+}
+
+/* line 1, ../../sass/partials/_banner.scss */
+.item-blue {
+  background: #009BD1;
+}
+
+/* line 2, ../../sass/partials/_banner.scss */
+.item-grey {
+  background: #edebe5;
+}
+
+/* line 3, ../../sass/partials/_banner.scss */
+.item-purple {
+  background: #301948;
+}
+
+/* line 4, ../../sass/partials/_banner.scss */
+.item-green {
+  background: #6eb3a2;
+}
+
+/* line 6, ../../sass/partials/_banner.scss */
+.full-width-slider {
+  position: relative;
+  width: 100%;
+  height: 458px;
+  overflow: hidden;
+  background: #edebe5;
+}
+
+/* line 14, ../../sass/partials/_banner.scss */
+.full-width-slider .slider {
+  width: 100%;
+}
+
+/* line 18, ../../sass/partials/_banner.scss */
+.full-width-slider .slider .item {
+  width: 100%;
+  height: 458px;
+}
+
+/* line 23, ../../sass/partials/_banner.scss */
+.banner-copy {
+  width: 100%;
+  height: 458px;
+  position: absolute;
+}
+
+/* line 29, ../../sass/partials/_banner.scss */
+.banner-content {
+  text-align: left;
+  position: relative;
+  z-index: 0;
+  margin-left: 50%;
+  left: -480px;
+  height: 458px;
+  width: 960px;
+  float: left;
+}
+/* line 40, ../../sass/partials/_banner.scss */
+.banner-content h1, .banner-content h2 {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  font-family: "rubrikmedium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 40px;
+  width: 450px;
+}
+/* line 51, ../../sass/partials/_banner.scss */
+.banner-content p {
+  color: #FFF;
+  font-family: "rubrik_regularregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+/* line 59, ../../sass/partials/_banner.scss */
+.banner-content .next-btn, .banner-content .last-btn {
+  display: inline-block;
+  background: #FFF;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 50px;
+  margin-top: 40px;
+  border-color: #FFF;
+  float: left;
+  padding: 0 13px;
+  color: #301948;
+  position: relative;
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+/* line 75, ../../sass/partials/_banner.scss */
+.banner-content .next-btn:hover, .banner-content .last-btn:hover {
+  color: #FFF;
+  background: #301948;
+}
+/* line 79, ../../sass/partials/_banner.scss */
+.banner-content .next-btn:hover .arrow-right, .banner-content .last-btn:hover .arrow-right {
+  display: block;
+}
+/* line 81, ../../sass/partials/_banner.scss */
+.banner-content .next-btn:hover .arrow-right img, .banner-content .last-btn:hover .arrow-right img {
+  margin-top: -50px;
+}
+/* line 87, ../../sass/partials/_banner.scss */
+.banner-content .arrow-right {
+  display: block;
+  height: 50px;
+  width: 36px;
+  overflow: hidden;
+  position: absolute;
+  right: -36px;
+  top: 0;
+}
+/* line 96, ../../sass/partials/_banner.scss */
+.banner-content .arrow-right img {
+  display: absolute;
+  pointer-events: none;
+}
+
+/* line 103, ../../sass/partials/_banner.scss */
+.banner-vertical {
+  display: table-cell;
+  vertical-align: middle;
+  height: 458px;
+  max-width: 480px;
+}
+
+/* line 110, ../../sass/partials/_banner.scss */
+.banner-right {
+  width: 460px;
+  height: 458px;
+  padding-right: 20px;
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 118, ../../sass/partials/_banner.scss */
+.banner-right .action-btn {
+  border-color: #FFF;
+  color: #FFF;
+  width: 240px;
+  margin-bottom: 7px;
+  text-align: left;
+}
+/* line 126, ../../sass/partials/_banner.scss */
+.banner-right .action-btn:hover {
+  border-color: #301948;
+}
+
+/* line 131, ../../sass/partials/_banner.scss */
+.full-width-slider .slider .item .bg-img {
+  width: 100%;
+}
+
+/* line 135, ../../sass/partials/_banner.scss */
+.full-width-slider i {
+  display: none !important;
+}
+
+/* line 139, ../../sass/partials/_banner.scss */
+.drag-scrollbar-scroll-container {
+  position: relative;
+  width: 960px;
+  height: 5px;
+  top: -5px;
+  z-index: 5;
+}
+
+/* line 147, ../../sass/partials/_banner.scss */
+.banner-tab {
+  margin: 13px 0 60px 0;
+  font-size: 15px;
+  width: 239px;
+  text-align: center;
+  border-right: 1px solid #b9b19a;
+  color: #b9b19a;
+  cursor: pointer;
+}
+
+/* line 157, ../../sass/partials/_banner.scss */
+.banner-tab:last-child {
+  border-right: 0;
+}
+
+/* line 161, ../../sass/partials/_banner.scss */
+.banner-tab:hover {
+  color: #009BD1;
+}
+
+/* line 165, ../../sass/partials/_banner.scss */
+.tab-active {
+  color: #301948;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 170, ../../sass/partials/_banner.scss */
+  .full-width-slider .slider .item .bg-img {
+    width: 1200px;
+    height: 458px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* line 177, ../../sass/partials/_banner.scss */
+  .banner-content {
+    margin-left: 20px;
+    left: 0;
+  }
+}
+/* line 1, ../../sass/partials/_shadowbox.scss */
+#sb-title-inner, #sb-info-inner, #sb-loading-inner, div.sb-message {
+  font-family: "HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+/* line 2, ../../sass/partials/_shadowbox.scss */
+#sb-container {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: left;
+  visibility: hidden;
+  display: none;
+}
+
+/* line 3, ../../sass/partials/_shadowbox.scss */
+#sb-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 4, ../../sass/partials/_shadowbox.scss */
+#sb-wrapper {
+  position: absolute;
+  visibility: hidden;
+  width: 100px;
+}
+
+/* line 5, ../../sass/partials/_shadowbox.scss */
+#sb-wrapper-inner {
+  position: relative;
+  border: 0;
+  overflow: hidden;
+  height: 100px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+
+/* line 6, ../../sass/partials/_shadowbox.scss */
+#sb-body {
+  position: relative;
+  height: 100%;
+}
+
+/* line 7, ../../sass/partials/_shadowbox.scss */
+#sb-body-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 8, ../../sass/partials/_shadowbox.scss */
+#sb-player.html {
+  height: 100%;
+  overflow: auto;
+}
+
+/* line 9, ../../sass/partials/_shadowbox.scss */
+#sb-body img {
+  border: none;
+}
+
+/* line 10, ../../sass/partials/_shadowbox.scss */
+#sb-loading {
+  position: relative;
+  height: 100%;
+}
+
+/* line 11, ../../sass/partials/_shadowbox.scss */
+#sb-loading-inner {
+  position: absolute;
+  font-size: 14px;
+  line-height: 24px;
+  height: 24px;
+  top: 50%;
+  margin-top: -12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 12, ../../sass/partials/_shadowbox.scss */
+#sb-loading-inner span {
+  background: url(../images/loading.gif) no-repeat;
+  padding-left: 34px;
+  display: inline-block;
+}
+
+/* line 13, ../../sass/partials/_shadowbox.scss */
+#sb-body, #sb-loading {
+  background-color: #060606;
+}
+
+/* line 14, ../../sass/partials/_shadowbox.scss */
+#sb-title, #sb-info {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* line 15, ../../sass/partials/_shadowbox.scss */
+#sb-title, #sb-title-inner {
+  height: 26px;
+  line-height: 26px;
+}
+
+/* line 16, ../../sass/partials/_shadowbox.scss */
+#sb-title-inner {
+  font-size: 16px;
+}
+
+/* line 17, ../../sass/partials/_shadowbox.scss */
+#sb-info, #sb-info-inner {
+  height: 20px;
+  line-height: 20px;
+}
+
+/* line 18, ../../sass/partials/_shadowbox.scss */
+#sb-info-inner {
+  font-size: 12px;
+}
+
+/* line 19, ../../sass/partials/_shadowbox.scss */
+#sb-nav {
+  float: right;
+  height: 16px;
+  padding: 2px 0;
+  width: 45%;
+}
+
+/* line 20, ../../sass/partials/_shadowbox.scss */
+#sb-nav a {
+  display: block;
+  float: right;
+  height: 16px;
+  width: 16px;
+  margin-left: 3px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+/* line 21, ../../sass/partials/_shadowbox.scss */
+.no-svg #sb-nav-close {
+  background-image: url(../images/close-purple.png);
+}
+
+/* line 22, ../../sass/partials/_shadowbox.scss */
+.svg #sb-nav-close {
+  background-image: url(../images/close-purple.svg);
+}
+
+/* line 23, ../../sass/partials/_shadowbox.scss */
+#sb-nav-next {
+  background-image: url(../images/next.png);
+}
+
+/* line 24, ../../sass/partials/_shadowbox.scss */
+#sb-nav-previous {
+  background-image: url(../images/previous.png);
+}
+
+/* line 25, ../../sass/partials/_shadowbox.scss */
+#sb-nav-play {
+  background-image: url(../images/play.png);
+}
+
+/* line 26, ../../sass/partials/_shadowbox.scss */
+#sb-nav-pause {
+  background-image: url(../images/pause.png);
+}
+
+/* line 27, ../../sass/partials/_shadowbox.scss */
+#sb-counter {
+  float: left;
+  width: 45%;
+}
+
+/* line 28, ../../sass/partials/_shadowbox.scss */
+#sb-counter a {
+  padding: 0 4px 0 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* line 29, ../../sass/partials/_shadowbox.scss */
+#sb-counter a.sb-counter-current {
+  text-decoration: underline;
+}
+
+/* line 30, ../../sass/partials/_shadowbox.scss */
+div.sb-message {
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 31, ../../sass/partials/_shadowbox.scss */
+div.sb-message a:link, div.sb-message a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* line 33, ../../sass/partials/_shadowbox.scss */
+#sb-info {
+  position: absolute;
+  right: 18px;
+  top: 45px;
+}
+
+/* line 1, ../../sass/partials/_select.scss */
+.hidden_select_container {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 7, ../../sass/partials/_select.scss */
+.simpleselect {
+  position: relative;
+  color: #333;
+  float: right;
+  margin-bottom: 4px;
+}
+
+/* line 14, ../../sass/partials/_select.scss */
+.simpleselect,
+.simpleselect .options {
+  width: 224px;
+}
+
+/* compensation for the border */
+/* line 20, ../../sass/partials/_select.scss */
+.simpleselect .options {
+  width: 220px;
+}
+
+/* line 24, ../../sass/partials/_select.scss */
+.simpleselect,
+.simpleselect .placeholder,
+.simpleselect .options .option {
+  height: 35px;
+  line-height: 35px;
+}
+
+/* line 31, ../../sass/partials/_select.scss */
+.simpleselect .placeholder,
+.simpleselect .options .option,
+.simpleselect .options .optgroup .optgroup-label {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* line 39, ../../sass/partials/_select.scss */
+.simpleselect .options .optgroup .optgroup-label {
+  cursor: default;
+  font-weight: bold;
+}
+
+/* line 44, ../../sass/partials/_select.scss */
+.simpleselect .options .optgroup .option,
+.simpleselect.has-optgroup .placeholder {
+  padding: 0 20px;
+}
+
+/* line 49, ../../sass/partials/_select.scss */
+.simpleselect .placeholder,
+.simpleselect .options {
+  background-color: #FFF;
+  border: 2px solid #edebe5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url("http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc");
+}
+
+/* line 56, ../../sass/partials/_select.scss */
+.simpleselect .placeholder .icon {
+  float: right;
+  font-size: 32px;
+}
+
+/* line 61, ../../sass/partials/_select.scss */
+.simpleselect .placeholder:hover,
+.simpleselect .options:hover {
+  border: 2px solid #009BD1;
+}
+
+/* line 66, ../../sass/partials/_select.scss */
+.simpleselect .options {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 79, ../../sass/partials/_select.scss */
+.simpleselect .options .option {
+  color: #beb9c7;
+}
+
+/* line 83, ../../sass/partials/_select.scss */
+.simpleselect .placeholder:hover,
+.simpleselect.active .placeholder,
+.simpleselect .options .option.active {
+  background: #edebe5;
+  color: #301948;
+  border-color: #009BD1;
+}
+
+/* line 91, ../../sass/partials/_select.scss */
+.simpleselect.disabled .placeholder,
+.simpleselect.disabled .placeholder:hover {
+  background: #f3f3f3;
+  color: #aaa;
+  border-color: #eee;
+  cursor: default;
+}
+
+/* line 828, ../../sass/style.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 832, ../../sass/style.scss */
+.clearfix:after {
+  clear: both;
+}

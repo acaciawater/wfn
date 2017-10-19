@@ -1,0 +1,45 @@
+{% load feincms_tags fragment_tags thumbnail %}
+
+{% fragment request "title_fragment" %}
+    {{ object.title }}
+{% endfragment %}
+
+{% if object.meta_keywords %}
+{% fragment request "meta_keywords_fragment" %}
+    {{ object.meta_keywords }}
+{% endfragment %}
+{% endif %}
+{% if object.meta_description %}
+{% fragment request "meta_description_fragment" %}
+    {{ object.meta_description }}
+{% endfragment %}
+{% fragment request "og_description_fragment" %}
+    {{ object.title }}
+{% endfragment %}
+{% endif %}
+
+{% fragment request "h1_fragment" %}
+    {{ object.title }}
+{% endfragment %}
+
+{% fragment request "og_title_fragment" %}
+    {{ object.title }}
+{% endfragment %}
+
+{% thumbnail object.main_image.file '320x210'  crop="center" format="JPEG" upscale=True as im %}
+<img class="right main-image" src="{{ im.url }}" alt="" width="320" height="210">
+{% endthumbnail %}
+{% if object.intro %}<p class="introduction">{{ object.intro }}</p>{% endif %}
+
+{% feincms_render_region object 'news_main' request %}
+
+{% fragment request "breadcrumb_fragment" %}
+    {{ object.title }}
+{% endfragment %}
+
+{% if object.content.news_sidebar %}
+{% fragment request "sidebar_fragment" %}
+    {% feincms_render_region object 'news_sidebar' request %}
+{% endfragment %}
+{% endif %}
+

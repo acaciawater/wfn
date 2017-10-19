@@ -1,0 +1,29 @@
+{% load thumbnail %}
+{% for p in object.people.all %}
+<div class="people media">
+    <span class="img">
+        {% thumbnail p.image.file '116x116'  crop="center" format="JPEG" upscale=True as im %}
+        <img src="{{ im.url }}" alt="">
+        {% endthumbnail %}
+    </span>
+
+    <div class="bd">
+
+        <span class="people-title left">
+            {{ p.name_full }}<br>
+            {% if p.role %}<i>{{ p.role }}</i>{% endif %}
+        </span>
+        {% if p.phone or p.email %}
+        <span class="people-contact eft">
+            {% if p.phone %}{{ p.phone }}{% endif %}{% if p.email and p.phone %}<br>{% endif %}
+            <a href="mailto:{{ p.email }}">{% if p.email %}{{ p.email }}</a>{% endif %}
+        </span>
+        {% endif %}
+
+        <div class="clear"></div>
+
+        {% if p.description %}<p>{{ p.description }}</p>{% endif %}
+    </div>
+</div>
+<div class="clear"></div>
+{% endfor %}

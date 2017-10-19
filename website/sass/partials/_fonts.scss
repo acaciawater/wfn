@@ -1,0 +1,140 @@
+/* FONTS */
+@font-face {
+    font-family: 'rubrikmedium';
+    src: url('../fonts/rubrik_medium-webfont.eot');
+    src: url('../fonts/rubrik_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubrik_medium-webfont.woff') format('woff'),
+         url('../fonts/rubrik_medium-webfont.ttf') format('truetype'),
+         url('../fonts/rubrik_medium-webfont.svg#rubrikmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubrikbold';
+    src: url('../fonts/rubrik_bold-webfont.eot');
+    src: url('../fonts/rubrik_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubrik_bold-webfont.woff') format('woff'),
+         url('../fonts/rubrik_bold-webfont.ttf') format('truetype'),
+         url('../fonts/rubrik_bold-webfont.svg#rubrikbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubrikextralight';
+    src: url('../fonts/rubrik_extralight-webfont.eot');
+    src: url('../fonts/rubrik_extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubrik_extralight-webfont.woff') format('woff'),
+         url('../fonts/rubrik_extralight-webfont.ttf') format('truetype'),
+         url('../fonts/rubrik_extralight-webfont.svg#rubrikextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubriklight';
+    src: url('../fonts/rubrik_light-webfont.eot');
+    src: url('../fonts/rubrik_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubrik_light-webfont.woff') format('woff'),
+         url('../fonts/rubrik_light-webfont.ttf') format('truetype'),
+         url('../fonts/rubrik_light-webfont.svg#rubriklight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubrik_regularregular';
+    src: url('../fonts/rubrik_regular-webfont.eot');
+    src: url('../fonts/rubrik_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubrik_regular-webfont.woff') format('woff'),
+         url('../fonts/rubrik_regular-webfont.ttf') format('truetype'),
+         url('../fonts/rubrik_regular-webfont.svg#rubrik_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rubriksemibold';
+    src: url('../fonts/rubrik_semibold-webfont.eot');
+    src: url('../fonts/rubrik_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rubrik_semibold-webfont.woff') format('woff'),
+         url('../fonts/rubrik_semibold-webfont.ttf') format('truetype'),
+         url('../fonts/rubrik_semibold-webfont.svg#rubriksemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wfn-icons';
+    src:url('../fonts/wfn-icons.eot');
+    src:url('../fonts/wfn-icons.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/wfn-icons.ttf') format('truetype'),
+        url('../fonts/wfn-icons.woff') format('woff'),
+        url('../fonts/wfn-icons.svg#wfn-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: 'wfn-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+    content: "\e600";
+}
+.icon-search:before {
+    content: "\e601";
+}
+.icon-quote-open:before {
+    content: "\e602";
+}
+.icon-quote-close:before {
+    content: "\e603";
+}
+.icon-profile:before {
+    content: "\e604";
+}
+.icon-mail:before {
+    content: "\e605";
+}
+.icon-linkedin:before {
+    content: "\e606";
+}
+.icon-facebook:before {
+    content: "\e607";
+}
+.icon-document:before {
+    content: "\e608";
+}
+.icon-close:before {
+    content: "\e609";
+}
+.icon-arrow-right:before {
+    content: "\e60a";
+}
+.icon-arrow-dropdown:before {
+    content: "\e60b";
+}
+.icon-arrow-down:before {
+    content: "\e60c";
+}
+.icon-arrow-up:before {
+    content: "\e60d";
+}
+.icon-youtube:before {
+    content: "\e60e";
+}
+.icon-article:before {
+	content: "\e60f";
+}

@@ -1,0 +1,19 @@
+{% extends "feincms_base.html" %}
+
+{% block content %}
+<!-- CONTENT -->
+<div class="container">
+
+    {% include "breadcrumbs.html" %}
+
+	<!-- PAGE GRID -->
+	<section class="content-full-width block left">
+
+	<h1>{{ feincms_page.title }}</h1>
+
+	<gcse:search linktarget="_parent"></gcse:search>
+
+	</section>
+
+</div>
+{% endblock %}

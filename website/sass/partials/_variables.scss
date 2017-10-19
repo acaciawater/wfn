@@ -1,0 +1,139 @@
+//$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$pie-url: url('http://production.wfp.fabriquehq.nl/static/js/pie/PIE.htc');
+$font-family: Arial, Helvetica, sans-serif;
+$font-rubrik-regular: 'rubrik_regularregular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-rubrik-medium: 'rubrikmedium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-rubrik-semibold: 'rubriksemibold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* CLASSES */
+.reset-space{
+	margin: 0;
+	padding: 0;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+@mixin rounded-corners ($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+
+    behavior: $pie-url;
+}
+
+@mixin rounded-corners-top ($radius){
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius;
+
+    behavior: $pie-url;
+}
+
+@mixin rounded-corners-bottom ($radius){
+    -webkit-border-bottom-left-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-radius-bottomleft: $radius;
+    -moz-border-radius-bottomright: $radius;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+
+    behavior: $pie-url;
+}
+
+@mixin rounded-corners-left ($radius){
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+
+    behavior: $pie-url;
+}
+
+@mixin rounded-corners-right ($radius){
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+
+    behavior: $pie-url;
+}
+
+::selection{
+	background: $branding-blue;
+	color: #000;
+}
+
+img::selection, iframe::selection, ul::selection{
+	background: #999;
+}
+
+.action-btn{
+    border: 2px solid $branding-purple;
+    text-decoration: none;
+    line-height: 21px;
+    display: inline-block;
+    padding: 7px 10px 7px 20px;
+
+    color: $branding-purple;
+    font-size: 14px;
+
+    @include rounded-corners(8px);
+
+    .icon{
+      margin-left: 15px;
+      display: inline-block;
+      text-align: right;
+      line-height: 21px;
+    }
+}
+p > .action-btn {
+  float:right;
+}
+
+.action-btn:hover{
+    background-color: $branding-purple;
+    color: #FFF;
+    border-color: $branding-purple;
+}
+
+.small-btn{
+  background: $branding-purple;
+  color: #FFF;
+  text-decoration: none;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px;
+  font-size: 14px;
+
+  @include rounded-corners(13px);
+}
+
+.small-btn:hover{
+  color: $branding-purple;
+  background: $branding-grey;
+}
+
+/* ====== media ====== */
+    .media {margin:0 0 0 0;}
+    .media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+    .media .img{float:left; margin-right: 20px;}
+    .media .circle {float:left; margin-right: 26px;}
+    .media .drop {float:left; margin-right: 36px;}
+    .media .img img{display:block;}
+    .media .imgExt{float:right; margin-left: 20px;}
+    .media .dropExt{float:right; margin-left: 36px;}

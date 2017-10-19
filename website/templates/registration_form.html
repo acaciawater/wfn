@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+	<div class="login-form">
+
+		<h1>Please register, it’s free!<a href="#">(or log in)</a></h1>
+		<p>Thanks for your interest in our downloads. Please tell us something about yourself first, and help us improve our website.</p>
+
+		<form method="post" class="wfn-form">
+
+			<div class="error-msg">
+				<span class="icon icon-close"></span><b>Attention!</b> Lorem ipsum dolar sitim.
+			</div>
+
+			<div class="input-row">
+				<label for="name">Name <span class="required">*</span></label>
+				<input type="text" name="name" id="name" value="">
+			</div>
+
+			<div class="input-row">
+				<label for="job">Job description</label>
+				<input type="text" name="job" id="job" value="">
+			</div>
+
+			<div class="input-row">
+				<label>Area</label>
+				<select name="area" id="area">
+					<option value="Public sector1">Public sector 1 <span class="icon icon-arrow-down"></span></option>
+					<option value="Public sector2">Public sector 2</option>
+					<option value="Public sector3">Public sector 3</option>
+					<option value="Public sector4">Public sector 4</option>
+					<option value="Public sector5">Public sector 5</option>
+				</select>
+			</div>
+
+			<div class="input-row">
+				<label for="interest">Whence your interest?</label>
+				<input type="text" name="interest" id="interest" value="">
+			</div>
+
+			<div class="input-row">
+				<label form="email">Email <span class="required">*</span></label>
+				<input type="text" name="email" id="email" placeholder="example@example.com" value="">
+			</div>
+
+			<div class="input-row">
+				<label for="password">Password <span class="required">*</span></label>
+				<input type="password" name="password" id="password" value="">
+            </div>
+
+			<div class="input-row">
+				<label for="newsletter">{% trans 'Newsletter' context 'Registration form' %} <span class="required">*</span></label>
+				<input type="checkbox" name="newsletter" id="newsletter" value="1">
+            </div>
+
+			<div class="input-row">
+				<label for="development-tool-updates">{% trans 'Updates on tool developments' context 'Registration form' %} <span class="required">*</span></label>
+				<input type="checkbox" name="development-tool-updates" id="development-tool-updates" value="1">
+            </div>
+
+			<div class="input-row">
+			    <br/><br/>
+			    <button type="submit" name="send" class="right">Register <span class="icon icon-arrow-right"></span></button>
+            </div>
+
+		</form>
+
+	</div>
+{% endblock %}

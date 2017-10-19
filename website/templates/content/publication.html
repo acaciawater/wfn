@@ -1,0 +1,21 @@
+{% load i18n markup %}
+{% for publication in publication_collection %}
+<div class="publication media" id="publication{{ publication.id }}_{{ object.id }}">
+    <span class="img">
+        <span class="pub-year">{{ publication.date|date:"Y" }}</span>
+    </span>
+
+    <span class="imgExt">
+        {% if publication.require_registration %}
+        <a target="_blank" {% if not user.is_authenticated %}data-rel="shadowbox;height=700;width=555"{% endif %} href="{% if user.is_authenticated %}{{ publication.download.upload_file.url }}{% else %}{% url "registration_register" %}#download-prep={{ publication.download.upload_file.url }}{% endif %}" class="action-btn{% if not user.is_authenticated %} shadowbox{% endif %}">{% trans "Download" %}<span class="icon icon-arrow-right"></span></a>
+        {% else %}
+        <a target="_blank" href="{{ publication.download.upload_file.url }}" class="action-btn">{% trans "Download" %}<span class="icon icon-arrow-right"></span></a>
+        {% endif %}
+    </span>
+
+    <div class="bd">
+        {{ publication.description|textile }}
+    </div>
+</div>
+<div class="clear"></div>
+{% endfor %}

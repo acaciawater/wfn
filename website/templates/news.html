@@ -1,0 +1,40 @@
+{% extends "feincms_base.html" %}
+{% load applicationcontent_tags feincms_tags %}
+
+{% block content %}
+<!-- CONTENT -->
+<div class="container">
+    {% include "breadcrumbs.html" %}
+
+    <section class="content-full-width block left">
+			<h1>
+                {% if request|has_fragment:"h1_fragment" %}
+                {% get_fragment request "h1_fragment" %}
+                {% else %}
+                {{ feincms_page.title }}
+                {% endif %}
+            </h1>
+	</section>
+
+    {% if feincms_page.content.news_main %}
+	<section class="content-left left">
+        <div class="block">
+        {% feincms_render_region feincms_page 'news_main' request %}
+        {% include "share_bar_content.html" %}
+        </div>
+	</section>
+    {% endif %}
+
+
+    <aside class="content-right left">
+
+    {% if request|has_fragment:"sidebar_fragment" %}
+        {% get_fragment request "sidebar_fragment" %}
+    {% else %}
+        {% feincms_render_region feincms_page "news_sidebar" request %}
+    {% endif %}
+
+	</aside>
+
+</div>
+{% endblock %}
